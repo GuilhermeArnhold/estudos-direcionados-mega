@@ -59,4 +59,4 @@ Criar um ```README.md``` e documentar os estudos, sem um padrão estabelecido pa
 
 **Referências**
 - https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element
-- https://www.w3schools.com/tags/default.asp
+- https://www.w3schools.com/tags/default.asp    
