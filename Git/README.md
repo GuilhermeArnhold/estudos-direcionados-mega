@@ -30,6 +30,14 @@ Sua documentação está presente em: <http://darcs.net/manual/Contents.html>
 * ```Histórico de alterações no seu código```: É possível ver o histórico de alterações no código, possibilitando uma visão do que foi alterado, quando e por quem.
 *  ```Praticidade e desempenho```: Otimizado para entregar velocidade e praticidade. Todas suas funcionalidades, foram desenhadas para serem práticas.
 
+## Objetos do Git
+* ```Tree```:
+Permite armazenar varios arquivos junto, é como uma árvore com ramificações
+* ```Blob```:
+* ```Commit```:
+
+
+
 ## Como o git identifica alterações?
 Na maioria das vezes, o git pega metadados do arquivo para identificar através do timestamp. Então, é possível que se for inserido um horário mais antigo ele não detecte que há uma alteração.
 
