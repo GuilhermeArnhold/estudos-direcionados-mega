@@ -12,6 +12,51 @@ Desenvolvido por John Gruber e Aaron Swart em 2004 para simplificar a estrutura�
 Para escrever textos com simplicidade, legibilidade e facilidade.
 
 ### Sintaxe
-
-
+* Cabeçalhos:
+``` 
+# Título 
+## Sub-Título 
+### Sub-sub-título
+```  
+* Itálico: 
+```
+*Texto em itálico*
+```
+* Negrito: 
+```
+**Texto em negrito**
+```
+* Listas não-ordenadas:  
+```
+- Primeiro Item 
+- Segundo item 
+- Terceiro item
+``` 
+* Listas ordenadas:
+```
+1. Primeiro item 
+2. Segundo Item 
+3. Terceiro item 
+```
+* Sub-listas: 
+```
+1. Primeiro item
+    - Um sub-item
+    - Outro sub-item
+2. Segundo item
+3. Terceiro item
+```
+* Links:
+```
+O criador é [Guilherme Arnhold](https://github.com/GuilhermeArnhold/).
+```
+* Imagens:
+```
+Logo do Grêmio ![Logo do Grêmio](https://logodetimes.com/times/gremio/logo-gremio-2048.png)
+```
+* Citações:
+```
+> Esta é uma citação. Esse sinal abre e fecha.
+```
 ### Estrutura
+
