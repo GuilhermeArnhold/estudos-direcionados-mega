@@ -67,9 +67,5 @@ Exemplo a ser seguido para cada elemento/tag:
 
 **Referências**
 - https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element
-<<<<<<< HEAD
-- https://www.w3schools.com/tags/default.asp    
-=======
 - https://www.w3schools.com/tags/default.asp
 - https://www.w3schools.com/tags/ref_attributes.asp
->>>>>>> upstream/master
