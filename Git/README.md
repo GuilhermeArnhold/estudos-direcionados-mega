@@ -31,17 +31,16 @@ Sua documentação está presente em: <http://darcs.net/manual/Contents.html>
 *  ```Praticidade e desempenho```: Otimizado para entregar velocidade e praticidade. Todas suas funcionalidades, foram desenhadas para serem práticas.
 
 ## Objetos do Git
-* ```Tree```:
-Permite armazenar varios arquivos junto, é como uma árvore com ramificações
-* ```Blob```:
-* ```Commit```:
+* ```Tree```:Permite armazenar varios arquivos juntos, é como uma árvore com ramificações.
+* ```Blob```: é o objeto utilizado para armazenar o conteúdo de cada arquivo em um repositório, utiliza a função Hash Sha-1.
+* ```Commit```: Salva o código da maneira como está em um repositório.
 
 
 
 ## Como o git identifica alterações?
 Na maioria das vezes, o git pega metadados do arquivo para identificar através do timestamp. Então, é possível que se for inserido um horário mais antigo ele não detecte que há uma alteração.
 
-## Comandos do Git
+## Alguns Comandos do Git
 
 * ```git init```: Cria um repositório git na pasta. 
 * ```git clone```: Clona um repositório remoto já existente.
@@ -62,5 +61,11 @@ Na maioria das vezes, o git pega metadados do arquivo para identificar através 
 * ```git tag```: Cria uma tag.
 * ```git branch nova-branch```: Cria uma nova branch.
 * ```git stash```: Cria um stash(um branch temporário que contém alterações não commitadas.) Utilizado quando é necessário trocar de branch sem realizar os commits.
-
-
+* ```git bisect start ```: Útil para encontrar commits com bugs.
+* ```git diff```: Mostra as alterações feitas.
+* ```git pull```: Incorpora as mudanças do repositório remoto para o local.
+* ```git log```: Mostra o histórico de commits, o autor e a data.
+* ```git merge```: Mescla alterações de uma branch para outra.
+* ```git status```: Mostra em qual branch você está, quais arquivos foram alterados e quais estão prontos para serem commitados.
+* ```git rebase```: Utilizado para reorganizar os commits de uma determinada branch.
+* ```git fetch```: Atualiza a árvore de commits local para a árvore de nosso repositório.
