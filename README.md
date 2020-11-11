@@ -74,8 +74,6 @@ Exemplo a ser seguido para cada elemento/tag:
 - https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element
 - https://www.w3schools.com/tags/default.asp
 - https://www.w3schools.com/tags/ref_attributes.asp
-<<<<<<< HEAD
-=======
 
 ### 4. CSS3
 Pensando de forma simplista e metaforando, o HTML5 seria o esqueleto de um site/aplicação web, agora com o CSS, poderemos estilizar (criar pele e características) para o esqueleto.
@@ -94,4 +92,3 @@ Exemplo a ser seguido para o css:
 
 **Materiais Complementares**
 - https://www.30secondsofcode.org/css/p/1
->>>>>>> upstream/master
