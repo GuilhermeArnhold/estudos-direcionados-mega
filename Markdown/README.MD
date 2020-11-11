@@ -11,7 +11,7 @@ Desenvolvido por John Gruber e Aaron Swart em 2004 para simplificar a estrutura�
 ### Para que serve?
 Para escrever textos com simplicidade, legibilidade e facilidade.
 
-### Sintaxe
+### Sintaxe e estrutura
 * Cabeçalhos:
 ``` 
 # Título 
@@ -58,5 +58,31 @@ Logo do Grêmio ![Logo do Grêmio](https://logodetimes.com/times/gremio/logo-gre
 ```
 > Esta é uma citação. Esse sinal abre e fecha.
 ```
-### Estrutura
+* Parágrafos: Para criar parágrafos só precisa pular uma linha.
+```
+Resumo: A leitura e a escrita são pontes incontestáveis para que haja uma inclusão do indivíduo dentro da sociedade.
+
+Tendo a escola à responsabilidade de sistematizar esses saberes, salienta-se que não é papel apenas do professor de língua portuguesa utilizar-se do texto para que haja uma aquisição significativa da linguagem.  
+```
+* Código: <br> 
+`` Para uma linha de código, utilizado duas crases. ``
+```
+Para um bloco de código, utilizamos três crases.
+```
+* Tabelas: 
+```
+Caracter | Permissão
+---------|----------
+`r`      | Permissão de leitura (*read*)
+`w`      | Permissão de escrita (*write*)
+`x`      | Permissão de execução (*execute*)
+`-`      | Permissão desabilitada
+```
+* Equações matemáticas:
+```
+As equações matemáticas são renderizadas através do MathJax.
+$Y = \beta_0 + \beta_1 x + \epsilon $.
+```
+
+Notas: Caso queira converter markdown em HTML pode-se utilizar o Pandoc, um software que uma vez instalado permite que a conversão seja realizada em linha de comando.
 
