@@ -2,7 +2,7 @@
 
 O objetivo desse documento, em primeiro lugar é estudar o HTML 5 e documenta-lo, seus elementos e seus atributos. Aproveitando a oportunidade, disponibilizo este documento para o aprendizado de iniciantes em HTML 5.
 
-Este documento teve como referência o site w3schools.com. Todos os códigos estão em funcionamento, qualquer erro identificado sinta-se a vontade para comunica-lo.
+Este documento teve como referência o site w3schools.com. Contém todos seus elementos e atributos. Os códigos podem ser executados a fim de compreender melhor o funcionamento.
 
 ## HTML5 TAGS
 * `<!DOCTYPE>`: Todo arquivo html deve iniciar com essa declaração, não é uma tag do HTML e tem como função informar ao browser sobre qual tipo de documento que se trata.
@@ -3778,7 +3778,7 @@ function myFunction() {
     </body>
 </html>
 ``` 
-* `onhashchange`: Dispara quando o elemento recebe uma entrada do usuário.
+* `oninput`: Dispara quando o elemento recebe uma entrada do usuário.
 ```html 
 <!DOCTYPE HTML>
 <html>
@@ -3797,3 +3797,516 @@ function myFunction() {
     </body>
 </html>
 ``` 
+* `oninvalid`: Ocorre quando um evento input submetido é inválido. 
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>
+        <form action="/action_page.php" method="get">
+        Nome: <input type="text" oninvalid="alert('Você precisa preencher seu nome.');" name="nome" required>
+        <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
+``` 
+* `onkeydown`: Dispara quando o usuário preciona uma tecla.(Dispara primeiro e é possível evitar que a tecla seja escrita no input através de um event handler)
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>
+        <input type="text" onkeydown="myFunction()">
+        <script>
+            function myFunction() {
+            alert("Você pressionou uma tecla dentro da caixa de texto");
+            }
+        </script>
+    </body>
+</html>
+``` 
+* `onkeypress`: Dispara quando o usuário preciona uma tecla.(É o segundo a disparar, não dispara com tecla que não caracteres como f1, f2, tab  e alt. Também gera resultados diferentes para letras grandes ou pequenas.)
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>
+        <input type="text" onkeypress="myFunction()">
+        <script>
+            function myFunction() {
+            alert("Você pressionou uma tecla dentro da caixa de texto");
+            }
+        </script>
+    </body>
+</html>
+``` 
+* `onkeyup`: Dispara quando o usuário preciona uma tecla.(é disparado quando a tecla é largada e o seu input adicionado/registado no DOM. No caso de um input o novo caracter é inserido e não dá para cancelar, ou seja um input receberá o caractere.)
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>
+        Insira seu nome: <input type="text" id="nome" onkeyup="myFunction()">
+        <script>
+            function myFunction() {
+            var x = document.getElementById("nome");
+            x.value = x.value.toUpperCase();
+            }
+        </script>
+    </body>
+</html>
+``` 
+* `onload`: Dispara quando o objeto é carregado.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body onload ="myFunction()">
+    <h1> Bem vindo</h1>
+        <script>
+            function myFunction() {
+            alert("Página carregada");
+            }
+        </script>
+    </body>
+</html>
+```
+* `onloadeddata`: Dispara quando os dados do frame são carregados mas não tem dados suficientes para reproduzir o proximo framde de vídeo ou áudio.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>
+        <audio id="myAudio" controls onloadeddata="myFunction()">
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="horse.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+        </audio>
+        <script>
+            function myFunction() {
+            alert("Data is loaded");
+            }
+        </script> 
+    </body>
+</html>
+```
+* `onloadedmetadata`: Ocorre quando metadados para o aúdio/video especifico foram carregados.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>
+        <audio id="myAudio" controls onloadedmetadata="myFunction()">
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="horse.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+        </audio>
+        <script>
+            function myFunction() {
+            alert("Meta data is loaded");
+            }
+        </script> 
+    </body>
+</html>
+```
+* `onloadstart`: Ocorre quando o navegador procura por um aúdio ou vídeo especifico. É quando o processo de carregamento começa.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>
+        <audio id="myAudio" controls onloadstart="myFunction()">
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="horse.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+        </audio>
+        <script>
+            function myFunction() {
+            alert("O arquivo de midia começou a ser carregado.");
+            }
+        </script> 
+    </body>
+</html>
+```
+* `onmousedown`: É acionado quando o botão do mouse é pressionado sobre o elemento.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>
+        Este texto ficará em vermelho quando pressionado o mouse por cima dele.
+        <script>
+            function mouseDown() {
+            document.getElementById("p1").style.color = "red";
+            }
+            function mouseUp() {
+            document.getElementById("p1").style.color = "green";
+            }
+        </script> 
+    </body>
+</html>
+```
+* `onmousemove`: Dispara quando o mouse se movimenta dentro do elemento. 
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>
+        <img onmousemove="bigImg(this)" onmouseout="normalImg(this)" border="0" src="smiley.gif" alt="Smiley" width="32" height="32">
+        <p> Passe o mouse sobre o emoticon.</p>
+        <script>
+           function bigImg(x) {
+                x.style.height = "64px";
+                x.style.width = "64px";
+                 }
+            function normalImg(x) {
+                x.style.height = "32px";
+                x.style.width = "32px";
+                }
+        </script> 
+    </body>
+</html>
+```
+* `onmouseout`: Dispara quando o mouse é retirado de cima do elemento.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>
+        <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="smiley.gif" alt="Smiley" width="32" height="32">
+        <p> Passe o mouse sobre o emoticon.</p>
+        <script>
+           function bigImg(x) {
+                x.style.height = "64px";
+                x.style.width = "64px";
+                 }
+            function normalImg(x) {
+                x.style.height = "32px";
+                x.style.width = "32px";
+                }
+        </script> 
+    </body>
+</html>
+```
+* `onmouseover`: Dispara quando o mouse está sobre o elemento.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>
+        <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="smiley.gif" alt="Smiley" width="32" height="32">
+        <p> Passe o mouse sobre o emoticon. </p>
+        <script>
+           function bigImg(x) {
+                x.style.height = "64px";
+                x.style.width = "64px";
+                 }
+            function normalImg(x) {
+                x.style.height = "32px";
+                x.style.width = "32px";
+                }
+        </script> 
+    </body>
+</html>
+```
+* `onmouseup`: É disparado quando o botão do mouse é liberado.(utilizado junto com onmousedown.)
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>
+        <p id="p1" onmousedown="mouseDown()" onmouseup="mouseUp()">
+        Um texto qualquer.</p>
+    <script>
+        function mouseDown() {
+        document.getElementById("p1").style.color = "red";
+        }
+
+        function mouseUp() {
+        document.getElementById("p1").style.color = "green";
+        }
+        </script>
+    </body>
+</html>
+```
+* `onmousewheel`: Dispara quando o scroll do mouse é rolado para cima ou para baixo.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <style>
+        #myDIV {
+        border: 1px solid black;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="myDIV" onmousewheel="myFunction()">Esse texto irá aumentar de tamanho quando rolado o scroll do mouse</div>
+        <script>
+        function myFunction() {
+        document.getElementById("myDIV").style.fontSize = "50px";
+        }
+        </script>
+    </body>
+</html>
+```
+* `onoffline`: Dispara quando o navegador estiver offline.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>
+        <p>Entre nas configurações do navegador e coloque offline.(No firefox pode-se utilizar a tecla de atalho F12.)
+        <script>
+            function onFunction() {
+            alert ("Seu navegador está online.");
+            }
+            function offFunction() {
+            alert ("Seu navegador está offline.");
+            }
+        </script>
+    </body>
+</html>
+```
+* `ononline`: Dispara quando o navegador está online.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>
+        <p>Entre nas configurações do navegador e coloque offline.(No firefox pode-se utilizar a tecla de atalho F12.)
+        <script>
+            function onFunction() {
+            alert ("Seu navegador está online.");
+            }
+            function offFunction() {
+            alert ("Seu navegador está offline.");
+            }
+        </script>
+    </body>
+</html>
+```
+* `onpagehide`: Seria "sumir" a página quando for aberta outra na mesma aba do navegador.
+Este evento não tem exemplo.(para mais informações pesquisar no site: https://developer.mozilla.org/en-US/docs/Web/API/Window/pagehide_event)
+
+* `onpageshow`: Ocorre quando o usuário navega para uma página da web.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body onpageshow="myFunction()">
+        <script>
+            function myFunction() {
+            alert ("Bem vindo!");
+            }
+        </script>
+    </body>
+</html>
+```
+* `onpaste`: O atributo dispara quando o usuário cola um conteúdo em um elemento.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>
+        <input type="text" onpaste="myFunction()" value="Copie algo aqui" size="40">
+        <p id="demo"></p>
+        <script>
+            function myFunction() {
+            document.getElementById("demo").innerHTML = "Você copiou o elemento";
+            }
+        </script>
+    </body>
+</html>
+``` 
+* `onpause`: Define um script para rodar quando o áudio ou video for pausado pelo usuário ou programado.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>
+        <audio id="myAudio" controls onpause="myFunction()">
+            <source src="horse.ogg" type="audio/ogg">
+            <source src="horse.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento áudio.
+        </audio>
+        <script>
+           function myFunction() {
+            alert("O áudio foi pausado.");
+            }
+        </script>
+    </body>
+</html>
+``` 
+* `onplay`: Esse atributo define um script para rodar quando o áudio ou vídeo iniciou ou não estiver mais pausado.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>
+        <audio id="myAudio" controls onplay="myFunction()">
+            <source src="horse.ogg" type="audio/ogg">
+            <source src="horse.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento áudio.
+        </audio>
+        <script>
+            function myFunction() {
+            alert("The audio file is playing");
+            }
+        </script> 
+    </body>
+</html>
+``` 
+* `onplaying`: Dispara quando o elemento de vídeo está em execução/andamento.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>
+        <audio id="myAudio" controls onplay="myFunction()">
+            <source src="horse.ogg" type="audio/ogg">
+            <source src="horse.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento áudio.
+        </audio>
+        <script>
+            function myFunction() {
+            alert("O áudio está em execução.");
+            }
+        </script> 
+    </body>
+</html>
+``` 
+* `onpoptage`:  Dispara quando um state object é removido do histórico do navegador o que acontece ao usar o “back” e o “forward”. Os state objects permanecem no disco rígido entre uma sessão e outra, o que é uma característica interessante. 
+```html 
+<!DOCTYPE html> 
+<html> 
+<body> 
+  <script> 
+    window.onpopstate = function(event) { 
+    alert("location: " + document.location + 
+    ", state: " + JSON.stringify(event.state)); 
+    }; 
+    history.pushState({ 
+      page: 1 
+    }, "title 1", "?page=1"); 
+    history.pushState({ 
+      page: 2 
+    }, "title 2", "?page=2"); 
+    history.replaceState({ 
+      page: 3 
+    }, "title 3", "?page=3"); 
+    // alerts "location: 
+    // https://ide.freshersnow.com/tryit.php?page=1, 
+    // state: {"page":1}" 
+    history.back(); 
+    // alerts "location: about:blank, state: null" 
+    history.back(); 
+  </script> 
+</body> 
+</html>
+```
+* `onprogress`: Define um script para rodar quando o navegador está baixando o áudio ou vídeo.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>
+        <audio id="myAudio" controls onplay="myFunction()">
+            <source src="horse.ogg" type="audio/ogg">
+            <source src="horse.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento áudio.
+        </audio>
+        <script>
+            function myFunction() {
+            alert("The audio file has started downloading");
+            }
+        </script> 
+    </body>
+</html>
+``` 
+* `onratechange`: Define um script para rodar quando a velocidade do áudio ou vídeo é alterada.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>
+        <audio id="myAudio" controls onplay="myFunction()">
+            <source src="horse.ogg" type="audio/ogg">
+            <source src="horse.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento áudio.
+        </audio>
+            <p id="demo">Altere a velocidade do áudio.</p>
+            <input type="range" min="0.5" max="3" step="0.1" value="1"oninput="changeRate(this)">
+       <script>
+            function myFunction() {
+            document.getElementById("demo").innerHTML = "A velocidade do áudio é " + document.getElementById("myAudio").playbackRate;
+            }
+            function changeRate(obj) {
+            document.getElementById("myAudio").playbackRate = obj.value;
+            }
+        </script> 
+    </body>
+</html>
+``` 
+* `onreset`: Dispara quando o formulário é resetado.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>
+        <form onreset="myFunction()">
+            Insira seu nome: <input type="text">
+            <input type="reset">
+        </form>
+        <script>
+            function myFunction() {
+            alert("O formulário foi resetado.");
+            }
+        </script>
+    </body>
+</html>
+``` 
+* `onresize`: Dispara quando redimensiona a janela do navegador.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body onresize="myFunction()">
+        <p>Tente redimensionar a janela do navegador</p>
+        <script>
+            function myFunction() {
+            alert("Você alterou o tamanho da janela do navegador.");
+            }
+        </script>
+     </body>
+</html>
+``` 
+
+
+
+
+
