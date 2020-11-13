@@ -4294,17 +4294,317 @@ Este evento não tem exemplo.(para mais informações pesquisar no site: https:/
 <!DOCTYPE HTML>
 <html>
     <head>
+        <style>
+            #myDIV {
+            border: 4px solid black;
+            width: 200px;
+            height: 100px;
+            overflow: scroll;
+            }
+        </style>
     </head>
     <body onresize="myFunction()">
-        <p>Tente redimensionar a janela do navegador</p>
+    <p> Tente redimensionar a janela do navegador.</p>
         <script>
-            function myFunction() {
-            alert("Você alterou o tamanho da janela do navegador.");
+           function myFunction() {
+            alert("You have changed the size of the browser window!");
             }
         </script>
      </body>
 </html>
 ``` 
+* `onscroll`: Dispara quando a barra de rolagem de um elemento está sendo rolada.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <style>
+            #myDIV {
+            border: 4px solid black;
+            width: 200px;
+            height: 100px;
+            overflow: scroll;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Role a barra scroll do mouse</p>
+        <div id="myDIV" onscroll="myFunction()">Quando eu era criança, gostavamos de jogar no computador.
+        <br><br>
+        Hoje, nós também gostamos.
+        </div>
+        <script>
+            function myFunction() {
+            document.getElementById("myDIV").style.color = "Blue";
+            }
+        </script>
+    </body>
+</html>
+``` 
+* `onsearch`: Dispara quando o usuário pressiona a tecla enter.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>
+        <p>Escreva alguma coisa e pressione enter.</p>
+        <input type="search" id="myInput" onsearch="myFunction()">
+        <p id="demo"></p>
+        <script>
+            function myFunction() {
+            var x = document.getElementById("myInput");
+            document.getElementById("demo").innerHTML = "Você está procurando por: " + x.value;
+            }
+        </script>
+    </body>
+</html>
+``` 
+* `onseeked`: Define um script para rodar quando o usuário termina de mover ou pular para uma nova posição do audio ou video.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>
+        <p id="demo">Mova para uma nova posição no áudio.</p>
+        <audio id="myAudio" controls onseeked="myFunction()">
+            <source src="horse.ogg" type="audio/ogg">
+            <source src="horse.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+        <script>
+            function myFunction() {
+            document.getElementById("demo").innerHTML = "Você moveu para a posição: " + document.getElementById("myAudio").currentTime;
+            }
+        </script> 
+    </body>
+</html>
+``` 
+* `onseeking`: Define um script para rodar quando o usuário começa a mover ou pular para uma nova posição do audio ou video.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>
+        <p id="demo">Mova para uma nova posição no áudio.</p>
+        <audio id="myAudio" controls onseeked="myFunction()">
+            <source src="horse.ogg" type="audio/ogg">
+            <source src="horse.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+        <script>
+            function myFunction() {
+            document.getElementById("demo").innerHTML = "Você moveu para a posição: " + document.getElementById("myAudio").currentTime;
+            }
+        </script> 
+    </body>
+</html>
+``` 
+* `onselect`: Dispara quando um texto é selecionado em um elemento.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>
+        Algum texto: <input type="text" value="Select me!!" onselect="myFunction()">
+        <script>
+            function myFunction() {
+            alert("Você selecionou o texto!");
+            }
+        </script>
+    </body>
+</html>
+``` 
+* `onstalled`: Define um script para rodar quando o navegador está tentando obter dados mas os dados estão indisponiveis.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>
+        <video controls onstalled="myFunction()">
+            <source src="sample.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de áudio.
+        </video>
+        <script>
+            function myFunction() {
+            alert("Data of this media not available");
+            }
+        </script>
+    </body>
+</html>
+``` 
+* `onstorage`: Script para rodar quando uma área de armazenamento da web for atualizada.
+Não há exemplo no site.
+* `onsubmit`: O atributo é disparado quando um formulário é enviado.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>
+        <form action="/action_page.php" onsubmit="myFunction()">
+            Insira seu nome: <input type="text" name="nome">
+            <input type="submit" value="Submit">
+        </form>
+        <script>
+            function myFunction() {
+            alert("O formulario foi enviado.");
+            }
+        </script>
+    </body>
+</html>
+``` 
+* `onsuspend`: Define um script para rodar quando o navegador não está coletando dados(Ocorre quando o carregamento foi suspenso, quando o download está completo.)
+Não há exemplo no site.
+* `ontimeupdate`: Define um script para rodar quando a posição de reprodução de um áudio ou video for alterada.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>
+        <p id="demo">Move to a new position in the audio:</p>
+        <audio id="myAudio" controls ontimeupdate="myFunction()">
+            <source src="horse.ogg" type="audio/ogg">
+            <source src="horse.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+        <script>
+            function myFunction() {
+            document.getElementById("demo").innerHTML = "You moved to position " + document.getElementById("myAudio").currentTime;
+            }
+        </script>
+    </body>
+</html>
+```
+* `ontoggle`: Dispara quando o usuário abre ou fecha o elemento ```<details>```.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>
+        <p>Abra os detalhes.</p>
+        <details ontoggle="myFunction()">
+        <summary>Copyright 1999-2014.</summary>
+        <p> - by Refsnes Data. All Rights Reserved.</p>
+        <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+        </details>
+        <script>
+           function myFunction() {
+            alert("O evento ontoggle ocorreu.");
+            }
+        </script>
+    </body>
+</html>
+```
+* `onunload`: Dispara quando uma página é recarregada.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body onunload="myFunction()">
+        <p>Recarregue a página</p>
+        <script>
+           function myFunction() {
+            alert("Você recarregou a página!");
+            }
+        </script>
+    </body>
+</html>
+```
+* `onvolumechange`: Dispara quando o volume do áudio é alterado pelo usuário.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>
+        <p id="demo">Altere o volume do áudio:</p>
+        <audio id="myAudio" controls onvolumechange="myFunction()">
+            <source src="horse.ogg" type="audio/ogg">
+            <source src="horse.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+        <script>
+            function myFunction() {
+            document.getElementById("demo").innerHTML = "Você alterou o volume";}
+        </script> 
+    </body>
+</html>
+```
+* `onwaiting`: Define um script a ser executado quando o vídeo for interrompido, pois precisa armazenar em buffer o proximo frame.
+Não há exemplo desse elemento. 
+
+
+* `onwheel`: Define um script para ser rodado quando o scroll do mouse for rolado sobre o elemento.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <style>
+        #myDIV {
+        border: 1px solid black;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="myDIV" onwheel="myFunction()"> Um texto qualquer </div>
+        <script>
+            function myFunction() {
+            document.getElementById("myDIV").style.fontSize = "35px";
+            }
+        </script> 
+    </body>
+</html>
+```
+* `open`: é um atributo booleano quando presente especifica que os detalhes devem estar visiveis por padrão.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>
+       <details open>
+        <summary>WWW</summary>
+        <p>WWW é a abreviação de World Wide Web.</p>
+        </details>
+    </body>
+</html>
+```
+* `optimum`: Especifica o intervalo considerado um valor ótimo no medidor.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>
+        <p><label for="progresso">Progresso:</label>
+        <meter id="progresso" value="0.3" high="0.9" low="0.1" optimum="0.5"></meter></p>
+    </body>
+</html>
+```
+* `pattern`: Especifica uma expressão regular com a qual o valor do elemento input é verificado.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>
+        <form action="/action_page.php">
+        <label for="country_code">Country code:</label>
+        <input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{5}" title="Three letter country code"><br><br>
+        <input type="submit">
+        </form>
+    </body>
+</html>
+```
+
 
 
 
