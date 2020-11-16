@@ -4604,9 +4604,391 @@ Não há exemplo desse elemento.
     </body>
 </html>
 ```
+* `placeholder`: Especifica uma dica para descrever o valor esperado no campo de entrada.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>
+        <form action="/action_page.php">
+            <label for="phone">Insira um número de telefone:</label><br><br>
+            <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+            <small>Formato: 123-45-678</small><br><br>
+            <input type="submit">
+        </form>
+    </body>
+</html>
+```
+* `poster`: Especifica uma imagem a ser exibida durante o download do vídeo ou até o usuário pressionar o botão de reprodução.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>  
+        <video width="320" height="240" poster="/images/w3schools_green.jpg" controls>
+            <source src="movie.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            Seu navegador não suporta o elemento de áudio.
+        </video>
+        </form>
+    </body>
+</html>
+```
+* `preload`: Especifica se e como o autor pensar que o arquivo de midia deve ser carregado quando a página é carregada. Permite que o autor de uma dica ao navegador sobre o que ele acha que dará uma melhor experiência ao usuário.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>  
+        <audio controls preload="none">
+            <source src="horse.ogg" type="audio/ogg">
+            <source src="horse.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </video>
+        </audio>
+    </body>
+</html>
+```
+* `readonly`: É um atributo booleano, quando presente especifica que um campo de entrada é somente leitura. Pode impedir que o usuário altere o valor até que algumas condições sejam atendidas.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>  
+       <form action="/action_page.php">
+            <label for="fname">Nome:</label>
+            <input type="text" id="nome" name="nome"><br><br>
+            <label for="country">Pais:</label>  
+            <input type="text" id="Pais" name="Pais" value="Brasil" readonly><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
+```
+* `rel`: Especifica a relação entre o documento atual e o documento ou recurso vinculado.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>  
+      <p><a rel="nofollow" href="http://www.functravel.com/">Cheap Flights</a></p>
+    </body>
+</html>
+```
+* `required`: É um atributo booleano, quando presente especifica que o elemento deve ser preenchido antes de enviar o formulário.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>  
+        <form action="/action_page.php">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <input type="submit">
+        </form>
+    </body>
+</html>
+```
+* `reversed`: É um atributo booleano, quando presente especifica que a lista deve ser decrescente.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>  
+        <ol reversed>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+    </body>
+</html>
+```
+* `rows`: Especifica a altura visível de uma área de texto, em linhas.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>  
+        <textarea rows="4" cols="50">
+No site w3schools, você encontra a documentação do HTML e muito mais, e tudo isso gratuito. Você pode aprender a criar seu próprio site!
+        </textarea>
+    </body>
+</html>
+```
+* `rowspan`: Especifica o número de linhas que uma célula deve abranger.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <style>
+        table, th, td {
+        border: 1px solid black;
+        }
+    </style>
+    </head>
+    <body>  
+        <table>
+            <tr>
+                <th>Mês</th>
+                <th>Gastos</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td>Janeiro</td>
+                <td>R$100</td>
+                <td rowspan="2">R$180</td>
+            </tr>
+            <tr>
+                <td>Fevereiro</td>
+                <td>R$80</td>
+            </tr>
+        </table>
+    </body>
+</html>
+```
+* `sandbox`: Permite um conjunto de restrições para o conteúdo no iframe.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>  
+        <iframe src="demo_iframe_sandbox.htm" sandbox>
+            <p>Seu navegador não suporta o elemento iframe</p>
+        </iframe>
+        <p> Esse botão irá rodar um script, porém, o iframe irá impedir sua execução</p> 
+    </body>
+</html>
+```
+* `scope`: Especifica se uma celula de cabeçalho é um cabeçalho de uma coluna, linha ou grupo de celulas.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <style>
+        table, th, td {
+    border: 1px solid black;
+    }
+</style>
+    </head>
+    <body>  
+       <table>
+            <tr>
+                <th></th>
+                <th scope="col">Mês</th>
+                <th scope="col">Gastos</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Janeiro</td>
+                <td>R$100</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Fevereiro</td>
+                <td>R$80</td>
+            </tr>
+        </table>
+    </body>
+</html>
+```
+* `selected`: É um atributo booleano, quando presente isso especifica que uma opção deve ser pré-selecionada quando a página carrega. Será exibida na lista suspensa.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>  
+        <label for="cars">Choose a car:</label>
+        <select id="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="vw">VW</option>
+            <option value="audi" selected>Audi</option>
+        </select>
+    </body>
+</html>
+```
+* `shape`: Especifica a forma de uma área.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>  
+        <img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+        <map name="workmap">
+            <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+            <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+            <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+        </map>
+    </body>
+</html>
+```
+* `size`: Para o atributo input, especifica a largura visível. Para o elemento select especifica o número de opções visiveis.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>  
+        <form action="/action_page.php">
+            <label for="fname">Nome:</label>
+            <input type="text" id="nome" name="nome" size="50"><br><br>
+            <label for="pin">PIN:</label>
+            <input type="text" id="pin" name="pin" maxlength="4" size="4"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
+```
+* `span`: Define o número de colunas do elemento. 
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <style>
+            table, th, td {
+            border: 2px solid black;
+            }
+        </style>
+    </head>
+    <body>  
+        <form action="/action_page.php">
+        <table>
+            <colgroup>
+                <col span="2" style="background-color:red">
+                <col style="background-color:yellow">
+            </colgroup>
+            <tr>
+                <th>Código</th>
+                <th>01</th>
+                <th>02</th>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Brahma</td>
+                <td>R$ 5</td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>Schin</td>
+                <td>R$ 4.50</td>
+            </tr>
+        </table>
+    </body>
+</html>
+```
+* `spellcheck`: Especifica se o elemento deve ou não ter sua gramática e ortografia verificadas.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>  
+        <p contenteditable="true" spellcheck="true">Tente alterar esse texto.</p>
+        Nome: <input type="text" name="fname" spellcheck="true">
+    </body>
+</html>
+```
+* `src`: Especifica a localização de uma URL de um recurso externo.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>  
+    <p> Clique no botão de áudio. </p>
+        <audio src="horse.ogg" controls>
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+    </body>
+</html>
+```
+* `srcdoc`: Especifica o conteúdo HTML da página a ser exibido no quadro embutido.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>  
+        <iframe srcdoc="<p>Olá mundo!</p>" src="demo_iframe_srcdoc.htm">
+        <p>Seu navegador não suporta iframes</p>
+        </iframe>
+    </body>
+</html>
+```
+* `srclang`: Especifica a linguagem dos dados do texto.Não há exemplo no site.
+<br>
 
+* `srcset`: Especifica a url da imagem em diferentes situações, como quando o tamanho da janela é alterado.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>  
+        <picture>
+            <source media="(min-width:650px)" srcset="img_pink_flowers.jpg">
+            <source media="(min-width:465px)" srcset="img_white_flower.jpg">
+            <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+        </picture>
+    </body>
+</html>
+```
+* `start`: Especifica o valor inicial de uma lista de itens ordenada.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>  
+        <ol start="50">
+            <li>Café</li>
+            <li>Chá</li>
+            <li>Leite</li>
+        </ol>
 
-
-
-
-
+        <ol type="I" start="50">
+            <li>Café</li>
+            <li>Chá</li>
+            <li>Leite</li>
+        </ol>
+    </body>
+</html>
+```
+* `step`: Especifica o intervalo de números para um elemento input.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>  
+        <form action="/action_page.php">
+            <label for="points">Points:</label>
+            <input type="number" id="points" name="points" step="3">
+            <input type="submit">
+        </form>
+    </body>
+</html>
+```
+* `style`: Especifica um estilo imbutido para um elemento.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>  
+        <h1 style="color:blue;text-align:center;">Esse é um cabeçalho.</h1>
+        <p style="color:green;">Esse é um parágrafo.</p>
+    </body>
+</html>
+``` 
