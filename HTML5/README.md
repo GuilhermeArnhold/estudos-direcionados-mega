@@ -4992,3 +4992,142 @@ No site w3schools, você encontra a documentação do HTML e muito mais, e tudo 
     </body>
 </html>
 ``` 
+* `tabindex`: Especifica a ordem de tabulação do documento.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>  
+        <div tabindex="1">W3Schools</div><br>
+        <div tabindex="3">Google</div><br>
+        <div tabindex="2">Microsoft</div>
+        <script>
+        document.getElementsByTagName('div')[0].focus();
+        </script>
+        <p tabindex="4"><b>Obs:</b> Tente navegar entre os elementos usando a tecla TAB do teclado.</p>
+    </body>
+</html>
+``` 
+* `target`: Para elementos de área, especifica onde abrir o documento vinculado. Para elementos de base, especifica o destino padrão para todos hyperlinks. Para elementos de formulário, especifica um nome ou palavra-chave que indica onde exibir a resposta exibida quando enviado o formulário.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>  
+        <p>Abra o link em uma nova janela.<a href="https://www.w3schools.com" target="_blank">Visite W3schools!!</a></p>
+    </body>
+</html>
+``` 
+* `title`: Define informações extras sobre um elemento.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>  
+        <p><abbr title="World Health Organization">WHO</abbr> Foi fundada em 1948.</p>
+        <p title="Tutoriais Grátis">W3Schools.com</p>
+    </body>
+</html>
+``` 
+* `translate`: Especifica quando um elemento deve ser traduzido ou não
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>  
+        <p translate="no">Não traduza isso!</p>
+    </body>
+</html>
+```
+* `type`: Para elementos de botão, o atributo type especifica o tipo de botão. Para elementos de entrada, o atributo type especifica o tipo de elemento input a ser exibido.
+Para elementos embed, link, object, script, source e style, o atributo type especifica o tipo de mídia da Internet (anteriormente conhecido como tipo MIME).
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>  
+     <form action="/action_page.php" method="get">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome"><br><br>
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" id="sobrenome" name="sobrenome"><br><br>
+        <button type="submit" value="Submit">Submit</button>
+        <button type="reset" value="Reset">Reset</button>
+    </form>
+    </body>
+</html>
+```
+* `usemap`: Especifica uma imagem ou objeto como um mapa de imagem(uma imagem com áreas clicáveis).
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>  
+        <p>Clique no computador, no celular ou na xicara de café para ir a uma nova página e ler mais sobre o tópico:</p>
+        <img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+        <map name="workmap">
+            <area shape="rect" coords="34,44,270,350" alt="Computador" href="computer.htm">
+            <area shape="rect" coords="290,172,333,250" alt="Celular" href="phone.htm">
+            <area shape="circle" coords="337,300,44" alt="Xicara de cafe" href="coffee.htm">
+        </map>
+    </body>
+</html>
+```
+* `value`: Para os elementos button, input e option, o atributo value especifica o valor inicial do elemento. Para elementos li, o atributo value define o valor do item da lista (para listas ordenadas). Os próximos itens da lista serão incrementados a partir desse valor.Para elementos meter, o atributo value especifica o valor atual do medidor.
+Para os elementos progress, o atributo value especifica quanto da tarefa foi concluída.
+Para elementos param, o atributo value especifica o valor do parâmetro.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>  
+        <form action="/action_page.php" method="get">
+            Escolha seu favorito:
+            <button name="subject" type="submit" value="fav_HTML">HTML</button>
+            <button name="subject" type="submit" value="fav_CSS">CSS</button>
+        </form>
+    </body>
+</html>
+```
+* `width`: Especifica a largura do elemento em pixels.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>  
+        <canvas id="myCanvas" width="200" height="200" style="border:1px solid">
+        O seu navegador não suporta o elemento canvas.
+        </canvas>
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.fillStyle = "#92B901";
+            ctx.fillRect(50, 50, 100, 100);
+        </script>
+    </body>
+</html>
+```
+* `wrap`: Especifica como o texto em uma área de texto deve ser quebrado quando enviado em um formulário.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>  
+        <form action="/action_page.php">
+            <textarea rows="2" cols="20" name="usrtxt" wrap="hard">
+No w3schools você vai encontrar tutoriais grátis.
+            </textarea>
+            <input type="submit">
+        </form>
+    </body>
+</html>
+```
