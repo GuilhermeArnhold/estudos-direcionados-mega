@@ -401,8 +401,875 @@ Safari            | 3.0
 Opera             | 10.5 
 <br>
 
+#### **background-color**
+Especifica a cor de fundo de um elemento.
+<br>
+Exemplo:
 
-          
+```css
+background-color: yellow;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0 
+Internet Explorer | 4.0
+Firefox           | 1.0 
+Safari            | 1.0 
+Opera             | 3.5 
+<br>
+
+#### **background-image**
+Especifica uma ou mais imagens de fundo para um elemento.
+<br>
+Exemplo:
+
+```css
+background-image: url("https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png");
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0 
+Internet Explorer | 4.0
+Firefox           | 1.0 
+Safari            | 1.0 
+Opera             | 3.5 
+<br>
+
+#### **background-origin**
+Especifica a posição de origem de uma imagem de fundo.
+<br>
+Exemplo:
+
+```css
+background-origin: padding-box;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 4.0 
+Internet Explorer | 9.0
+Firefox           | 4.0 
+Safari            | 3.0 
+Opera             | 10.5 
+<br>
+
+#### **background-position**
+Especifica a posição de uma imagem de fundo.
+<br>
+Exemplo:
+
+```css
+background-position: right;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0 
+Internet Explorer | 4.0
+Firefox           | 1.0 
+Safari            | 1.0 
+Opera             | 3.5 
+<br>
+
+#### **background-repeat**
+Especifica se e como uma imagem deve ser repetida.
+<br>
+Exemplo:
+
+```css
+background-repeat: repeat-y;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0 
+Internet Explorer | 4.0
+Firefox           | 1.0 
+Safari            | 1.0 
+Opera             | 3.5 
+<br>
+
+#### **background-size**
+Especifica o tamanho da imagem de fundo.
+<br>
+Exemplo:
+
+```css
+background-size: 300px 100px;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 4.0/1.0 -webkit- 
+Internet Explorer | 9.0
+Firefox           | 4.0/3.6 -moz- 
+Safari            | 4.1/3.0 -webkit-
+Opera             | 10.5/10.0 -o-
+<br>
+
+#### **border**
+Propriedade abreviada para border-width, borders-style e border-color.
+<br>
+Exemplo:
+
+```css
+border: 5px dotted blue;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0 
+Internet Explorer | 4.0
+Firefox           | 1.0 
+Safari            | 1.0 
+Opera             | 3.5
+<br>
+
+#### **border-bottom**
+Propriedade abreviada para border-bottom-width, border-bottom-style e border-bottom-color.
+<br>
+Exemplo:
+
+```css
+border-bottom: double;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0 
+Internet Explorer | 4.0
+Firefox           | 1.0 
+Safari            | 1.0 
+Opera             | 3.5
+<br>
+
+#### **border-bottom-color**
+Especifica a cor da borda inferior.
+<br>
+Exemplo:
+
+```css
+border-bottom-color: coral;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0 
+Internet Explorer | 4.0
+Firefox           | 1.0 
+Safari            | 1.0 
+Opera             | 3.5
+<br>
+
+#### **border-bottom-left-radius**
+Define o raio da borda do canto esquerdo inferior. 
+<br>
+Exemplo:
+
+```css
+border-bottom-left-radius: 25px;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 5.0/4.0 -webkit- 
+Internet Explorer | 9.0
+Firefox           | 4.0/3.0 -moz- 
+Safari            | 5.0/3.1 -webkit- 
+Opera             | 10.5
+<br>
+
+#### **border-bottom-left-radius**
+Define o raio da borda do canto direito inferior. Se dois valores são setados, o primeiro é da borda inferior e o segundo da borda esquerda.
+<br>
+Exemplo:
+
+```css
+border-bottom-left-radius: 25px;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 5.0/4.0 -webkit- 
+Internet Explorer | 9.0
+Firefox           | 4.0/3.0 -moz- 
+Safari            | 5.0/3.1 -webkit- 
+Opera             | 10.5
+<br>
+
+#### **border-bottom-right-radius**
+Define o raio da borda do canto direito inferior. Se dois valores são setados, o primeiro é da borda inferior e o segundo da borda direita.
+<br>
+Exemplo:
+
+```css
+border-bottom-right-radius: 50px 20px;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 5.0/4.0 -webkit- 
+Internet Explorer | 9.0
+Firefox           | 4.0/3.0 -moz- 
+Safari            | 5.0/3.1 -webkit- 
+Opera             | 10.5
+<br>
+
+#### **border-bottom-style**
+Define o estilo da borda inferior.
+<br>
+Exemplo:
+
+```css
+border-bottom-style: dotted;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0 
+Internet Explorer | 5.5
+Firefox           | 1.0 
+Safari            | 1.0 
+Opera             | 9.2
+<br>
+
+#### **border-bottom-width**
+Define a largura da borda inferior.
+<br>
+Exemplo:
+
+```css
+border-bottom-width: thin;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0 
+Internet Explorer | 4.0
+Firefox           | 1.0 
+Safari            | 1.0 
+Opera             | 3.5
+<br>
+
+#### **border-collapse**
+Define se as bordas da tabela devem ser recolhidas em uma única borda ou separadas.
+<br>
+Exemplo:
+
+```css
+border-collapse: separate;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0 
+Internet Explorer | 5.0
+Firefox           | 1.0 
+Safari            | 1.2 
+Opera             | 4.0
+<br>
+
+#### **border-color**
+Define a cor das quatro bordas.
+<br>
+Exemplo:
+
+```css
+border-color: coral;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0 
+Internet Explorer | 4.0
+Firefox           | 1.0 
+Safari            | 1.0 
+Opera             | 3.5
+<br>
+
+#### **border-image**
+Uma abreviação para todas as propriedades border-image.
+<br>
+Exemplo:
+
+```css
+border-image: url(border.png) 30 round; 
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 16.0/4.0 -webkit- 
+Internet Explorer | 11.0
+Firefox           | 15.0/3.5 -moz- 
+Safari            | 6.0/3.1 -webkit-
+Opera             | 15.0/11.0 -o-
+<br>
+
+#### **border-imagem-outset**
+Especifica a quantidade em que a área de imagem da borda se estende além da caixa da borda.
+<br>
+Exemplo:
+
+```css
+border-image-outset: 10px; 
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 15.0 
+Internet Explorer | 11.0
+Firefox           | 15.0 
+Safari            | 6.0
+Opera             | 15.0
+<br>
+
+#### **border-imagem-repeat**
+Especifica se a imagem da borda deve ser repetida, arredondada ou esticada.
+<br>
+Exemplo:
+
+```css
+border-image-repeat: stretch; 
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 15.0 
+Internet Explorer | 11.0
+Firefox           | 15.0 
+Safari            | 6.0
+Opera             | 15.0
+<br>
+
+#### **border-imagem-slice**
+Especifica como cortar a borda da imagem.
+<br>
+Exemplo:
+
+```css
+border-image-slice: 30%; 
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 15.0 
+Internet Explorer | 11.0
+Firefox           | 15.0 
+Safari            | 6.0
+Opera             | 15.0
+<br>
+
+#### **border-imagem-source**
+Especifica o caminho para a imagem ser usada como borda.
+<br>
+Exemplo:
+
+```css
+border-image-source: url(border.png);  
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 15.0 
+Internet Explorer | 11.0
+Firefox           | 15.0 
+Safari            | 6.0
+Opera             | 15.0
+<br>
+
+#### **border-imagem-width**
+Especifica a largura da imagem da borda.
+<br>
+Exemplo:
+
+```css
+border-image-width: 10px;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 15.0 
+Internet Explorer | 11.0
+Firefox           | 13.0 
+Safari            | 6.0
+Opera             | 15.0
+<br>
+
+#### **border-left**
+Uma propriedade abreviada para todas as propriedades border-left.
+<br>
+Exemplo:
+
+```css
+border-left: 5px solid orange;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0 
+Internet Explorer | 4.0
+Firefox           | 1.0 
+Safari            | 3.5
+Opera             | 1.0
+<br>
+
+#### **border-left-color**
+Define a cor da borda esquerda.
+<br>
+Exemplo:
+
+```css
+border-left-color: green;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0 
+Internet Explorer | 4.0
+Firefox           | 1.0 
+Safari            | 1.0
+Opera             | 3.5
+<br>
+
+#### **border-left-style**
+Define o estilo da borda da esquerda.
+<br>
+Exemplo:
+
+```css
+border-left-style: dotted;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0 
+Internet Explorer | 5.5
+Firefox           | 1.0 
+Safari            | 1.0
+Opera             | 9.2
+<br>
+
+#### **border-left-width**
+Define a largura da borda esquerda.
+<br>
+Exemplo:
+
+```css
+border-left-width: thin;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0 
+Internet Explorer | 4.0
+Firefox           | 1.0     
+Safari            | 1.0
+Opera             | 3.5
+<br>
+
+#### **border-radius**
+Uma propriedade abreviada para as quatro propriedades border-radius.
+<br>
+Exemplo:
+
+```css
+border-radius: 30px;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 5.0/4.0 -webkit- 
+Internet Explorer | 9.0
+Firefox           | 4.0/3.0 -moz-     
+Safari            | 5.0/3.1 -webkit-
+Opera             | 10.5
+<br>
+
+#### **border-right**
+Uma propriedade abreviada para todas propriedades border-right.
+<br>
+Exemplo:
+
+```css
+border-right: 5px dotted blue;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 4.0
+Firefox           | 1.0     
+Safari            | 1.0
+Opera             | 3.5
+<br>
+
+#### **border-right-color**
+Especifica a cor da borda direita.
+<br>
+Exemplo:
+
+```css
+border-right-color: coral;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 4.0
+Firefox           | 1.0     
+Safari            | 1.0
+Opera             | 3.5
+<br>
+
+#### **border-right-style**
+Especifica o estilo da borda direita.
+<br>
+Exemplo:
+
+```css
+border-right-style: groove;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 4.0
+Firefox           | 1.0     
+Safari            | 1.0
+Opera             | 3.5
+<br>
+
+#### **border-right-width**
+Especifica a largura da borda direita.
+<br>
+Exemplo:
+
+```css
+border-right-width: thick;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 4.0
+Firefox           | 1.0     
+Safari            | 1.0
+Opera             | 3.5
+<br>
+
+#### **border-spacing**
+Especifica a distância entre as bordas das células adjacentes.
+<br>
+Exemplo:
+
+```css
+border-spacing: 15px 50px;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 8.0
+Firefox           | 1.0     
+Safari            | 1.0
+Opera             | 4.0
+<br>
+
+#### **border-style**
+Especifica o estilo das quatro bordas.
+<br>
+Exemplo:
+
+```css
+border-style: dotted solid double dashed;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 4.0
+Firefox           | 1.0     
+Safari            | 1.0
+Opera             | 3.5
+<br>
+
+#### **border-top**
+Uma propriedade abreviada para border-top-width, border-top-style e border-top-color.
+<br>
+Exemplo:
+
+```css
+border-top: double;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 4.0
+Firefox           | 1.0     
+Safari            | 1.0
+Opera             | 3.5
+<br>
+
+#### **border-top-color**
+Especifica a cor da borda superior.
+<br>
+Exemplo:
+
+```css
+border-top-color: deepskyblue;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 4.0
+Firefox           | 1.0     
+Safari            | 1.0
+Opera             | 3.5
+<br>
+
+#### **border-top-left-radius**
+Define o raio da borda do canto superior esquerdo.
+<br>
+Exemplo:
+
+```css
+border-top-left-radius: 50px 20px;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 5.0/4.0 -webkit-
+Internet Explorer | 9.0
+Firefox           | 4.0/3.0 -moz-     
+Safari            | 5.0/3.1 -webkit-
+Opera             | 10.5
+<br>
+
+#### **border-top-right-radius**
+Define o raio da borda do canto superior esquerdo.
+<br>
+Exemplo:
+
+```css
+border-top-right-radius: 25px;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 5.0/4.0 -webkit-
+Internet Explorer | 9.0
+Firefox           | 4.0/3.0 -moz-     
+Safari            | 5.0/3.1 -webkit-
+Opera             | 10.5
+<br>
+
+#### **border-top-style**
+Define o estilo da borda superior.
+<br>
+Exemplo:
+
+```css
+border-top-style dotted;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 5.5
+Firefox           | 1.0    
+Safari            | 1.0
+Opera             | 9.2
+<br>
+
+#### **border-top-width**
+Define a largura da borda superior.
+<br>
+Exemplo:
+
+```css
+border-top-width: medium;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 5.5
+Firefox           | 1.0    
+Safari            | 1.0
+Opera             | 9.2
+<br>
+
+#### **border-width**
+Define a largura das quatro bordas.
+<br>
+Exemplo:
+
+```css
+border-width: medium;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 4.0
+Firefox           | 1.0    
+Safari            | 1.0
+Opera             | 3.5
+<br>
+
+#### **bottom**
+Define a posição do elemento, a partir da parte inferior do seu elemento pai.
+<br>
+Exemplo:
+
+```css
+bottom: 5px;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 5.0
+Firefox           | 1.0    
+Safari            | 1.0
+Opera             | 6.0
+<br>
+
+#### **box-decoration-break**
+Define o comportamento do plano de fundo e da borda de um elemento na quebra de página ou na quebra de linha.
+<br>
+Exemplo:
+
+```css
+box-decoration-break: slice;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 22.0 -webkit-
+Internet Explorer | 79.0
+Firefox           | 32.0    
+Safari            | 6.1 -webkit-
+Opera             | 11.5 -webkit-
+<br>
+
+#### **box-shadow**
+Atribui uma ou mais sombras ao elemento.
+<br>
+Exemplo:
+
+```css
+box-shadow: 10px 10px blue;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 10.0/ 4.0 -webkit-
+Internet Explorer | 9.0
+Firefox           | 4.0/3.5 -moz- 
+Safari            | 5.1/3.1 -webkit-
+Opera             | 10.5
+<br>
+
+#### **box-sizing**
+Define como a largura e altura são calculadas, pode incluir preenchimento e bordas ou não.
+<br>
+Exemplo:
+
+```css
+box-sizing: border-box;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 10.0/ 4.0 -webkit-
+Internet Explorer | 8.0
+Firefox           | 29.0/2.0 -moz-    
+Safari            | 5.1/3.2 -webkit-
+Opera             | 9.5
+<br>
+
+#### **break-after**
+Especifica se uma quebra de página, coluna deve ocorrer ou não após o elemento especificado.
+<br>
+Exemplo:
+
+```css
+break-after: always;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 50.0
+Internet Explorer | 10.0
+Firefox           | 65.0    
+Safari            | 10.0
+Opera             | 37.0
+<br>
+
+#### **break-before**
+Especifica se uma quebra de página, coluna deve ocorrer ou não antes o elemento especificado.
+<br>
+Exemplo:
+
+```css
+break-before: always;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 50.0
+Internet Explorer | 10.0
+Firefox           | 65.0    
+Safari            | 10.0
+Opera             | 37.0
+<br>
+
+#### **break-inside**
+Especifica se uma quebra de página, coluna deve ocorrer ou não dentro do elemento especificado.
+<br>
+Exemplo:
+
+```css
+break-inside: avoid;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 50.0
+Internet Explorer | 10.0
+Firefox           | 65.0    
+Safari            | 10.0
+Opera             | 37.0
+<br>
+
+#### **caption-side**
+Especifica o posicionamento de uma legenda de tabela.
+<br>
+Exemplo:
+
+```css
+caption-side: bottom;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 8.0
+Firefox           | 1.0    
+Safari            | 1.0
+Opera             | 4.0
+<br>
+
+#### **caret-color**
+Especifica a cor do cursor em entradas, áreas de texto ou qualquer elemento editável.
+<br>
+Exemplo:
+
+```css
+caret-color: red;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 57.0
+Internet Explorer | 79.0
+Firefox           | 53.0    
+Safari            | 11.1
+Opera             | 44.0
+<br>
+
+#### **@charset**
+Especifica a codificação de carácteres usado na página de estilos.
+<br>
+Exemplo:
+
+```css
+@charset "UTF-8";
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 2.0
+Internet Explorer | 12.0
+Firefox           | 1.5    
+Safari            | 4.0
+Opera             | 9.0
+<br>
+
+#### **clear**
+Especifica em quais lados de um elemento os elementos flutuantes não podem flutuar.
+<br>
+Exemplo:
+
+```css
+clear: both;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 2.0
+Internet Explorer | 12.0
+Firefox           | 1.5    
+Safari            | 4.0
+Opera             | 9.0
+<br>
+
+
+
 
 
 
