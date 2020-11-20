@@ -2002,7 +2002,7 @@ Especifica um nome para o item da grade ou esta propriedade é uma propriedade p
 Exemplo:
 
 ```css
-grid: 150px;
+grid-area: myArea;
 ```
 
 Navegador         | Versão
