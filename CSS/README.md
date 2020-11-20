@@ -1268,6 +1268,753 @@ Safari            | 4.0
 Opera             | 9.0
 <br>
 
+#### **clip**
+Permite especificar um retângulo para cortar um elemento posicionado de forma absoluta. O retângulo é especificado como quatro coordenadas, todas do canto superior esquerdo do elemento a ser recortado.
+<br>
+Exemplo:
+
+```css
+clip: rect(0px,60px,200px,0px);
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 8.0
+Firefox           | 1.0    
+Safari            | 1.0
+Opera             | 7.0
+<br>
+
+#### **color**
+Especifica a cor do texto.
+<br>
+Exemplo:
+
+```css
+color: orange;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 3.0
+Firefox           | 1.0    
+Safari            | 1.0
+Opera             | 3.5
+<br>
+
+#### **column-count**
+Especifica o número de colunas em que um elemento deve ser dividido.
+<br>
+Exemplo:
+
+```css
+column-count: 3;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 50.0/4.0 -webkit-
+Internet Explorer | 10.0
+Firefox           | 52.0/2.0 -moz-    
+Safari            | 9.0/3.1 -webkit- 
+Opera             | 37.0/15.0 -webkit-/11.1
+<br>
+
+#### **column-fill**
+Especifica como preencher as colunas, balanceadas ou não.
+<br>
+Exemplo:
+
+```css
+column-fill: balance;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 50.0
+Internet Explorer | 10.0
+Firefox           | 52.0/13.0 -moz-    
+Safari            | 1.0/7.0 -webkit- 
+Opera             | 37.0
+<br>
+
+#### **column-gap**
+Especifica a lacuna entre as colunas.
+<br>
+Exemplo:
+
+```css
+column-gap: 40px;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 50.0
+Internet Explorer | 10.0
+Firefox           | 52.0/2.0 -moz-    
+Safari            | 9.0/3.1 -webkit- 
+Opera             | 37.0/15.0 -webkit/11.1
+<br>
+
+#### **column-rule**
+Uma propriedade abreviada para todas as propriedades column-rule.
+<br>
+Exemplo:
+
+```css
+column-rule: 4px double #ff00ff;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 50.0/4.0 -webkit-
+Internet Explorer | 10.0
+Firefox           | 52.0/2.0 -moz-    
+Safari            | 9.0/3.1 -webkit- 
+Opera             | 37.0/15.0 -webkit/11.1
+<br>
+
+#### **column-rule-color**
+Especifica a cor da regra entre as colunas.
+<br>
+Exemplo:
+
+```css
+column-rule-color: red;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 50.0/4.0 -webkit-
+Internet Explorer | 10.0
+Firefox           | 52.0/2.0 -moz-    
+Safari            | 9.0/3.1 -webkit- 
+Opera             | 37.0/15.0 -webkit/11.1
+<br>
+
+#### **column-rule-style**
+Especifica a cor da regra entre as colunas.
+<br>
+Exemplo:
+
+```css
+column-rule-style: dotted;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 50.0/4.0 -webkit-
+Internet Explorer | 10.0
+Firefox           | 52.0/2.0 -moz-    
+Safari            | 9.0/3.1 -webkit- 
+Opera             | 37.0/15.0 -webkit/11.1
+<br>
+
+#### **column-rule-width**
+Especifica a cor da regra entre as colunas.
+<br>
+Exemplo:
+
+```css
+column-rule-width: 10px;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 50.0/4.0 -webkit-
+Internet Explorer | 10.0
+Firefox           | 52.0/2.0 -moz-    
+Safari            | 9.0/3.1 -webkit- 
+Opera             | 37.0/15.0 -webkit/11.1
+<br>
+
+#### **column-span**
+Especifica quantas colunas um elemento deve abranger.
+<br>
+Exemplo:
+
+```css
+column-span: all;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 50.0/4.0 -webkit-
+Internet Explorer | 10.0
+Firefox           | 71.0  
+Safari            | 9.0/3.1 -webkit- 
+Opera             | 37.0/15.0 -webkit/11.1
+<br>
+
+#### **column-width**
+Especifica a largura da coluna.
+<br>
+Exemplo:
+
+```css
+column-width: 50px;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 50.0/4.0 -webkit-
+Internet Explorer | 10.0
+Firefox           | 52.0/2.0 -moz-  
+Safari            | 9.0/3.1 -webkit- 
+Opera             | 37.0/15.0 -webkit/11.1
+<br>
+
+#### **columns**
+Uma propriedade abreviada para column-width e column-count.
+<br>
+Exemplo:
+
+```css
+columns: 100px 5; 
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 50.0/4.0 -webkit-
+Internet Explorer | 10.0
+Firefox           | 52.0/9.0 -moz-  
+Safari            | 9.0/3.1 -webkit- 
+Opera             | 37.0/15.0 -webkit/11.1
+<br>
+
+#### **content**
+Usado com os pseudo-elementos: before e after, para inserir o conteúdo gerado.
+<br>
+Exemplo:
+
+```css
+content: " (" attr(href) ")";
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0 
+Internet Explorer | 8.0
+Firefox           | 1.0   
+Safari            | 1.0 
+Opera             | 4.0
+<br>
+
+#### **counter-increment**
+Aumenta ou diminui o valor de um ou mais contadores CSS.
+<br>
+Exemplo:
+
+```css
+counter-increment: my-sec-counter;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 4.0 
+Internet Explorer | 8.0
+Firefox           | 2.0   
+Safari            | 3.1 
+Opera             | 9.6
+<br>
+
+#### **counter-reset**
+Cria ou redefine um ou mais contadores CSS.
+<br>
+Exemplo:
+
+```css
+counter-reset: my-sec-counter;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 4.0 
+Internet Explorer | 8.0
+Firefox           | 2.0   
+Safari            | 3.1 
+Opera             | 9.6
+<br>
+
+#### **cursor**
+Especifica o cursor do mouse a ser exibido ao apontar sobre um elemento.
+<br>
+Exemplo:
+
+```css
+cursor: cell;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 5.0 
+Internet Explorer | 5.5
+Firefox           | 4.0   
+Safari            | 5.0 
+Opera             | 9.6
+<br>
+
+#### **direction**
+Especifica a direção do texto.
+<br>
+Exemplo:
+
+```css
+direction: rtl;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 2.0 
+Internet Explorer | 5.5
+Firefox           | 1.0   
+Safari            | 1.3 
+Opera             | 9.2
+<br>
+
+
+#### **display**
+Especifica como um determinado elemento HTML deve ser exibido.
+<br>
+Exemplo:
+
+```css
+display: block;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 4.0 
+Internet Explorer | 8.0 
+Firefox           | 3.0   
+Safari            | 3.1  
+Opera             | 7.0
+<br>
+
+#### **empty-cells**
+Especifica como um determinado elemento HTML deve ser exibido.
+<br>
+Exemplo:
+
+```css
+empty-cells: hide;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0 
+Internet Explorer | 8.0 
+Firefox           | 1.0   
+Safari            | 1.2  
+Opera             | 4.0
+<br>
+
+#### **filter**
+Define efeitos de um elemento antes dele ser exibido.
+<br>
+Exemplo:
+
+```css
+filter: brightness(122%);
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 53.0/18.0 -webkit- 
+Internet Explorer | 13.0 
+Firefox           | 35.0   
+Safari            | 9.1/6.0 -webkit-  
+Opera             | 40.0/15.0 -webkit-
+<br>
+
+#### **flex**
+Uma propriedade abreviada para flex-grow, flex-shrink e flex-basis.
+<br>
+Exemplo:
+
+```css
+flex: 1;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 29.0/21.0 -webkit- 
+Internet Explorer | 11.0/10.0 -ms- 
+Firefox           | 28.0/18.0 -moz-   
+Safari            | 9.0/6.1 -webkit-  
+Opera             | 17.0
+<br>
+
+#### **flex-basis**
+Especifica o comprimento inicial de um item flexível.
+<br>
+Exemplo:
+
+```css
+flex-basis: 50px;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 29.0/21.0 -webkit- 
+Internet Explorer | 11.0 
+Firefox           | 28.0/18.0 -moz-   
+Safari            | 9.0/6.1 -webkit-  
+Opera             | 17.0
+<br>
+
+
+#### **flex-direction**
+Especifica a direção dos itens flexíveis.
+<br>
+Exemplo:
+
+```css
+flex-direction: row-reverse;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 29.0/21.0 -webkit- 
+Internet Explorer | 11.0 
+Firefox           | 28.0/18.0 -moz-   
+Safari            | 9.0/6.1 -webkit-  
+Opera             | 17.0
+<br>
+
+#### **flex-flow**
+Uma propriedade abreviada para as propriedades flex-direction e flex-wrap.
+<br>
+Exemplo:
+
+```css
+flex-flow: row-reverse wrap;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 29.0/21.0 -webkit- 
+Internet Explorer | 11.0 
+Firefox           | 28.0/18.0 -moz-   
+Safari            | 9.0/6.1 -webkit-  
+Opera             | 17.0
+<br>
+
+#### **flex-grow**
+Especifica quanto o item irá crescer em relação ao resto.
+<br>
+Exemplo:
+
+```css
+flex-grow: 2;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 29.0/21.0 -webkit- 
+Internet Explorer | 11.0 
+Firefox           | 28.0/18.0 -moz-   
+Safari            | 9.0/6.1 -webkit-  
+Opera             | 17.0
+<br>
+
+
+#### **flex-shrink**
+Especifica como o item irá encolher em relação ao resto.
+<br>
+Exemplo:
+
+```css
+flex-grow: 2;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 29.0/21.0 -webkit- 
+Internet Explorer | 11.0 
+Firefox           | 28.0/18.0 -moz-   
+Safari            | 9.0/6.1 -webkit-  
+Opera             | 17.0
+<br>
+
+#### **flex-wrap**
+Especifica se os itens flexíveis devem envolver ou não.
+<br>
+Exemplo:
+
+```css
+flex-grow: 2;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 29.0/21.0 -webkit- 
+Internet Explorer | 11.0 
+Firefox           | 28.0/18.0 -moz-   
+Safari            | 9.0/6.1 -webkit-  
+Opera             | 17.0
+<br>
+
+#### **float**
+Especifica se uma caixa deve ou não flutuar.
+<br>
+Exemplo:
+
+```css
+float: right;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 29.0/21.0 -webkit- 
+Internet Explorer | 11.0 
+Firefox           | 28.0/18.0 -moz-   
+Safari            | 9.0/6.1 -webkit-  
+Opera             | 17.0
+<br>
+
+#### **font**
+Uma propriedade abreviada para as propriedades font-style, font-variant, font-weight, font-size/line-height e font-family.
+<br>
+Exemplo:
+
+```css
+font: 15px Arial, sans-serif;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0 
+Internet Explorer | 4.0 
+Firefox           | 1.0   
+Safari            | 1.0  
+Opera             | 3.5
+<br>
+
+#### **@font-face**
+Uma regra que permite que sites façam download e usem fontes diferentes das fontes "seguras para a web".
+<br>
+Exemplo:
+
+```css
+@font-face {
+  font-family: myFirstFont;
+  src: url(sansation_light.woff);
+}
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 4.0 
+Internet Explorer | 9.0 
+Firefox           | 3.5   
+Safari            | 3.1  
+Opera             | 10.0
+<br>
+
+#### **font-family**
+Especifica a familia da fonte para o texto.
+<br>
+Exemplo:
+
+```css
+font-family: "Times New Roman", Times, serif;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0 
+Internet Explorer | 4.0 
+Firefox           | 1.0   
+Safari            | 1.0  
+Opera             | 3.5
+<br>
+
+#### **font-feature-settings**
+Permite o controle sobre recursos tipográficos avançados em fontes OpenType.
+<br>
+Exemplo:
+
+```css
+font-feature-settings: "smcp" on;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 48.0/16.0 -webkit- 
+Internet Explorer | 10.0 
+Firefox           | 34.0/15.0 -moz-   
+Safari            | 9.1  
+Opera             | 35.0/15.0 -webkit-
+<br>
+
+#### **font-kerning**
+Controla o uso das informações de kerning(como as letras estão espaçadas).
+<br>
+Exemplo:
+
+```css
+font-kerning: normal;
+```
+Navegador         | Versão
+------------------|--------
+Chrome            | 33.0/29.0 -webkit- 
+Internet Explorer | 79.0 
+Firefox           | 34.0  
+Safari            | 9.1/7.0 -webkit-  
+Opera             | 20.1/16.0 -webkit-
+<br>
+
+#### **font-language-override**
+Controla o uso de glifos específicos do idioma em uma fonte.
+<br>
+Exemplo:
+
+
+Não possui exemplo no site.
+
+Navegador         | Versão
+------------------|--------
+Chrome            | Não encontrada 
+Internet Explorer | Não encontrada 
+Firefox           | Não encontrada
+Safari            | Não encontrada  
+Opera             | Não encontrada
+<br>
+
+#### **font-size**
+Especifica o tamanho da fonte do texto.
+<br>
+Exemplo:
+
+```css
+font-size: 150%;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0 
+Internet Explorer | 5.5
+Firefox           | 1.0
+Safari            | 1.0  
+Opera             | 7.0
+<br>
+
+#### **font-size-adjust**
+Preserva a legibilidade do texto quando ocorre o fallback de fonte.
+<br>
+Exemplo:
+
+```css
+font-size-adjust:  0.58; 
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | Não suportado
+Internet Explorer | Não suportado
+Firefox           | 3.0
+Safari            | Não suportado
+Opera             | Não suportado.
+<br>
+
+#### **font-stretch**
+Seleciona uma face normal, condensada ou expandida de uma família de fontes.
+<br>
+Exemplo:
+
+```css
+font-stretch: expanded; 
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 48.0
+Internet Explorer | 9.0
+Firefox           | 9.0
+Safari            | 11.0
+Opera             | 35.0
+<br>
+
+#### **font-style**
+Especifica o estilo da fonte para o texto.
+<br>
+Exemplo:
+
+```css
+font-style: italic;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 4.0
+Firefox           | 1.0
+Safari            | 1.0
+Opera             | 7.0
+<br>
+
+#### **font-synthesis**
+Controla quais fontes ausentes(negrito ou itálico) podem ser sintetizadas pelo navegador.
+<br>
+Exemplo:
+
+
+Não possui exemplo no site.
+
+
+Navegador         | Versão
+------------------|--------
+Chrome            | Não encontrada
+Internet Explorer | Não encontrada
+Firefox           | Não encontrada
+Safari            | Não encontrada
+Opera             | Não encontrada
+<br>
+
+#### **font-variant**
+Especifica se um texto deve ser exibido ou não em uma fonte de caixa baixa.
+<br>
+Exemplo:
+
+```css
+font-variant: small-caps;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 4.0
+Firefox           | 1.0
+Safari            | 1.0
+Opera             | 3.5
+<br>
+
+#### **font-weight**
+Especifica o peso de uma fonte.
+<br>
+Exemplo:
+
+```css
+font-weight: bold;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 2.0
+Internet Explorer | 4.0
+Firefox           | 1.0
+Safari            | 1.3
+Opera             | 3.5
+<br>
+
+#### **grid**
+Uma propriedade abreviada para as propriedades grid-template-rows, grid-template-columns, grid-template-areas, grid-auto-rows, grid-auto-columns e grid-auto-flow.
+<br>
+Exemplo:
+
+```css
+grid: 150px;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 57
+Internet Explorer | 16
+Firefox           | 52
+Safari            | 10
+Opera             | 44
+<br>
+
+#### **grid-area**
+Especifica um nome para o item da grade ou esta propriedade é uma propriedade para as propriedades grid-row-start, grid-column-start, grid-row-end, and grid-column-end properties.
+<br>
+Exemplo:
+
+```css
+grid: 150px;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 57
+Internet Explorer | 16
+Firefox           | 52
+Safari            | 10
+Opera             | 44
+<br>
+
+
 
 
 
