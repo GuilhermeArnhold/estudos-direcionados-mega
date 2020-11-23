@@ -1885,7 +1885,7 @@ Chrome            | Não suportado
 Internet Explorer | Não suportado
 Firefox           | 3.0
 Safari            | Não suportado
-Opera             | Não suportado.
+Opera             | Não suportado
 <br>
 
 #### **font-stretch**
@@ -2014,17 +2014,1434 @@ Safari            | 10
 Opera             | 44
 <br>
 
+#### **grid-auto-columns**
+Especifica um tamanho de coluna padrão.
+<br>
+Exemplo:
+
+```css
+grid-area: 50px;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 57
+Internet Explorer | 16
+Firefox           | 52
+Safari            | 10
+Opera             | 44
+<br>
+
+#### **grid-auto-flow**
+Especifica como os itens colocados automaticamente são inseridos na grade.
+<br>
+Exemplo:
+
+```css
+grid-area: 50px;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 57
+Internet Explorer | 16
+Firefox           | 52
+Safari            | 10
+Opera             | 44
+<br>
+
+#### **grid-auto-rows**
+Especifica um tamanho de linha padrão.   
+<br>
+Exemplo:
+
+```css
+grid-auto-rows: 150px;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 57
+Internet Explorer | 16
+Firefox           | 52
+Safari            | 10
+Opera             | 44
+<br>
+
+#### **grid-column**
+Uma propriedade abreviada para as propriedades grid-column-start e grim-column-end.   
+<br>
+Exemplo:
+
+```css
+grid-column: grid-column: 1 / span 2;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 57
+Internet Explorer | 16
+Firefox           | 52
+Safari            | 10
+Opera             | 44
+<br>
+
+#### **grid-column-end**
+Especifica onde terminar o item da grade.
+<br>
+Exemplo:
+
+```css
+grid-column-end: span 3;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 57
+Internet Explorer | 16
+Firefox           | 52
+Safari            | 10
+Opera             | 44
+<br>
+
+#### **grid-column-start**
+Especifica onde iniciar o item da grade.
+<br>
+Exemplo:
+
+```css
+grid-column-start: 2;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 57
+Internet Explorer | 16
+Firefox           | 52
+Safari            | 10
+Opera             | 44
+<br>
+
+#### **grid-grap**
+Uma propriedade abreviada para grid-row-gap e grid-column-gap propriedades.
+<br>
+Exemplo:
+
+```css
+grid-grap: 50px;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 57
+Internet Explorer | 16
+Firefox           | 52
+Safari            | 10
+Opera             | 44
+<br>
+
+#### **grid-row**
+Uma propriedade abreviada para as propriedades grid-row-start e grid-row-end.
+<br>
+Exemplo:
+
+```css
+grid-row: 1 / span 2; 
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 57
+Internet Explorer | 16
+Firefox           | 52
+Safari            | 10
+Opera             | 44
+<br>
+
+#### **grid-row-end**
+Especifica onde terminar o item da grade.
+<br>
+Exemplo:
+
+```css
+grid-row-end: span 3; 
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 57
+Internet Explorer | 16
+Firefox           | 52
+Safari            | 10
+Opera             | 44
+<br>
+
+#### **grid-row-start**
+Especifica onde iniciar o item da grade.
+<br>
+Exemplo:
+
+```css
+grid-row-start: 2; 
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 57
+Internet Explorer | 16
+Firefox           | 52
+Safari            | 10
+Opera             | 44
+<br>
+
+#### **grid-template**
+Uma propriedade abreviada para grid-template-rows, grid-template-columns e grid-areas.
+<br>
+Exemplo:
+
+```css
+grid-template: 150px; 
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 57
+Internet Explorer | 16
+Firefox           | 52
+Safari            | 10
+Opera             | 44
+<br>
+
+#### **grid-template-areas**
+Especifica como exibir colunas e linhas, usando nomes de grade.
+<br>
+Exemplo:
+
+```css
+grid-template-areas: myArea;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 57
+Internet Explorer | 16
+Firefox           | 52
+Safari            | 10
+Opera             | 44
+<br>
+
+#### **grid-template-columns**
+Especifica o tamanho das colunas, e quantas colunas em um layout de grade.
+<br>
+Exemplo:
+
+```css
+grid-template-columns: auto auto auto auto;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 57
+Internet Explorer | 16
+Firefox           | 52
+Safari            | 10
+Opera             | 44
+<br>
+
+#### **grid-template-rows**
+Especifica o tamanho das linhas em um layout de grade.
+<br>
+Exemplo:
+
+```css
+grid-template-rows: 100px 300px;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 57
+Internet Explorer | 16
+Firefox           | 52
+Safari            | 10
+Opera             | 44
+<br>
+
+#### **hanging-punctuation**
+Especifica se um caractere de pontuação pode ser colocado fora da caixa de linha.
+<br>
+Exemplo:
+
+```css
+hanging-punctuation: first;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | Não suportado
+Internet Explorer | Não suportado
+Firefox           | Não suportado
+Safari            | 10+
+Opera             | Não suportado
+<br>
+
+#### **height**
+Define a altura de um elemento.
+<br>
+Exemplo:
+
+```css
+height: 50px;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 4.0
+Firefox           | 1.0
+Safari            | 1.0
+Opera             | 7.0
+<br>
+
+#### **hyphens**
+Define como dividir palavras para melhorar o layout dos parágrafos.
+<br>
+Exemplo:
+
+```css
+hyphens: auto;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 55.0
+Internet Explorer | 79.0/10.0 -ms-
+Firefox           | 43.0
+Safari            | 5.1 -webkit-
+Opera             | 4.0
+<br>
+
+#### **image-rendering**
+Dá uma dica ao navegador sobre quais aspectos de uma imagem são mais importantes para preservar quando a imagem é redimensionada.
+<br>
+Exemplo:
+
+```css
+Não há exemplo no site.
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | Não encontrada
+Internet Explorer | Não encontrada
+Firefox           | Não encontrada
+Safari            | Não encontrada
+Opera             | Não encontrada
+<br>
+
+#### **@import**
+Permite-lhe importar uma folha de estilo para outra folha de estilo.
+<br>
+Exemplo:
+
+```css
+Não há exemplo no site.
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 5.5
+Firefox           | 1.0
+Safari            | 1.0
+Opera             | 3.5
+<br>
 
 
+#### **isolation**
+Define se um elemento deve criar um novo conteúdo de empilhamento.
+<br>
+Exemplo:
 
+```css
+isolation: isolate;
+```
 
+Navegador         | Versão
+------------------|--------
+Chrome            | 41.0
+Internet Explorer | 79.0
+Firefox           | 36.0
+Safari            | yes
+Opera             | 30.0
+<br>
 
+#### **justify-content**
+Especifica o alinhamento entre os itens de um recipiente flexível quando os itens não usam todo o espaço disponível.
+<br>
+Exemplo:
 
+```css
+justify-content: center;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 29.0/21.0 -webkit-
+Internet Explorer | 11.0
+Firefox           | 28.0/18.0 -moz-
+Safari            | 9.0/6.1 -webkit-
+Opera             | 17.0
+<br>
+
+#### **@keyframes**
+Especifica o código de animação.
+<br>
+Exemplo:
+
+```css
+@keyframes mymove{
+    from{top: 0px;}
+    from{top: 200px;}
+}
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 43.0/4.0 -webkit-
+Internet Explorer | 10.0
+Firefox           | 16.0/5.0 -moz-
+Safari            | 9.0/4.0 -webkit-
+Opera             | 30.0/15.0 -webkit-/12.0 -o-
+<br>
+
+#### **left**
+Especifica a posição esquerda de um elemento posicionado.
+<br>
+Exemplo:
+
+```css
+left: 150px;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 5.5
+Firefox           | 1.0
+Safari            | 1.0
+Opera             | 5.0
+<br>
+
+#### **letter-spacing**
+Insere ou retira espaços entre caracteres de um texto.
+<br>
+Exemplo:
+
+```css
+letter-spacing: 5px;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 4.0
+Firefox           | 1.0
+Safari            | 1.0
+Opera             | 3.5
+<br>
+
+#### **line-break**
+Especifica como/se quebrar linhas.
+<br>
+Exemplo:
+
+```css
+Não há exemplo no site.
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 4.0
+Firefox           | 1.0
+Safari            | 1.0
+Opera             | 3.5
+<br>
+
+#### **list-style**
+Define todas propriedades de uma lista em uma declaração.
+<br>
+Exemplo:
+
+```css
+list-style: square inside url("sqpurple.gif");
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 4.0
+Firefox           | 1.0
+Safari            | 1.0
+Opera             | 7.0
+<br>
+
+#### **list-style-image**
+Especifica uma imagem como marcador do item da lista.
+<br>
+Exemplo:
+
+```css
+list-style-image: url('sqpurple.gif');
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 4.0
+Firefox           | 1.0
+Safari            | 1.0
+Opera             | 7.0
+<br>
+
+#### **list-style-position**
+Especifica a posição dos marcadores de item da lista.
+<br>
+Exemplo:
+
+```css
+list-style-position: inside;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 4.0
+Firefox           | 1.0
+Safari            | 1.0
+Opera             | 3.5
+<br>
+
+#### **list-style-type**
+Especifica o tipo de marcador de item da lista.
+<br>
+Exemplo:
+
+```css
+list-style-type: square;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 4.0
+Firefox           | 1.0
+Safari            | 1.0
+Opera             | 3.5
+<br>
+
+#### **margin**
+Define todas as propriedades de margem em uma só declaração.
+<br>
+Exemplo:
+
+```css
+margin: 35px;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 6.0
+Firefox           | 1.0
+Safari            | 1.0
+Opera             | 3.5
+<br>
+
+#### **margin-bottom**
+Define a margem inferior de um elemento.
+<br>
+Exemplo:
+
+```css
+margin-bottom: 25px;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 6.0
+Firefox           | 1.0
+Safari            | 1.0
+Opera             | 3.5
+<br>
+
+#### **margin-left**
+Define a margem esquerda de um elemento.
+<br>
+Exemplo:
+
+```css
+margin-left: 25px;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 6.0
+Firefox           | 1.0
+Safari            | 1.0
+Opera             | 3.5
+<br>
+
+#### **margin-right**
+Define a margem direita de um elemento.
+<br>
+Exemplo:
+
+```css
+margin-right: 25px;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 6.0
+Firefox           | 1.0
+Safari            | 1.0
+Opera             | 3.5
+<br>
+
+#### **margin-top**
+Define a margem superior de um elemento.
+<br>
+Exemplo:
+
+```css
+margin-top: 25px;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 6.0
+Firefox           | 1.0
+Safari            | 1.0
+Opera             | 3.5
+<br>
+
+#### **mask**
+Oculta um elemento mascarando ou recortando a imagem em lugares específicos.
+<br>
+Exemplo:
+
+```css
+Não há exemplo.
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | Não encontrada
+Internet Explorer | Não encontrada
+Firefox           | Não encontrada
+Safari            | Não encontrada
+Opera             | Não encontrada
+<br>
+
+#### **mask-type**
+Especifica se um elemento de máscara é usado como luminância ou máscara alfa.
+<br>
+Exemplo:
+
+```css
+Não há exemplo.
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | Não encontrada
+Internet Explorer | Não encontrada
+Firefox           | Não encontrada
+Safari            | Não encontrada
+Opera             | Não encontrada
+<br>
+
+#### **max-height**
+Define a altura máxima de um elemento.
+<br>
+Exemplo:
+
+```css
+max-height: 50px;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 7.0
+Firefox           | 1.0
+Safari            | 2.0.2
+Opera             | 7.0
+<br>
+
+#### **max-width**   
+Define a largura máxima de um elemento.
+<br>
+Exemplo:
+
+```css
+max-width: 150px;
+
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 7.0
+Firefox           | 1.0
+Safari            | 2.0.2
+Opera             | 7.0
+<br>
  
+#### **@media**   
+Define as regras de estilo para diferentes tipos/dispositivos e tamanhos de mídia.
+<br>
+Exemplo:
+
+```css
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 21
+Internet Explorer | 9
+Firefox           | 3.5
+Safari            | 4.0
+Opera             | 9.0
+<br>
+
+#### **min-height**   
+Define a altura minima de um elemento.
+<br>
+Exemplo:
+
+```css
+min-height: 200px;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 7.0
+Firefox           | 3.0
+Safari            | 2.0.2
+Opera             | 4.0
+<br>
+
+#### **mix-blend-mode**   
+Especifica como o conteúdo de um elemento deve se misturar com o elemento pai.
+<br>
+Exemplo:
+
+```css
+mix-blend-mode: darken;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 41.0
+Internet Explorer | 79.0
+Firefox           | 32.0
+Safari            | 8.0
+Opera             | 35.0
+<br>
+
+#### **object-fit**   
+Especifica como o conteúdo de um elemento substituído deve ser ajustado à caixa estabelecida por sua altura e largura usadas.
+<br>
+Exemplo:
+
+```css
+object-fit: cover;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 31.0
+Internet Explorer | 16.0
+Firefox           | 36.0
+Safari            | 7.1
+Opera             | 19.0
+<br>
+
+#### **object-fit**   
+Especifica como o conteúdo de um elemento substituído deve ser ajustado à caixa estabelecida por sua altura e largura usadas.
+<br>
+Exemplo:
+
+```css
+object-fit: cover;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 31.0
+Internet Explorer | 16.0
+Firefox           | 36.0
+Safari            | 7.1
+Opera             | 19.0
+<br>
+
+#### **object-position**   
+Especifica o alinhamento do elemento substituído dentro da sua caixa.
+<br>
+Exemplo:
+
+```css
+object-position: 5px 10%;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 31.0
+Internet Explorer | 16.0
+Firefox           | 36.0
+Safari            | 10.0
+Opera             | 19.0
+<br>
+
+#### **opacity**   
+Define o nível de opacidade de um elemento.
+<br>
+Exemplo:
+
+```css
+opacity: 0.5;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 4.0
+Internet Explorer | 9.0
+Firefox           | 2.0
+Safari            | 3.1
+Opera             | 9.0
+<br>
+
+#### **order**   
+Define a ordem do item flexível em relação ao resto.
+<br>
+Exemplo:
+
+```css
+order: 3;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 29.0
+Internet Explorer | 11.0
+Firefox           | 28.0/18.0 -moz-
+Safari            | 9.0/6.1 -webkit-
+Opera             | 17.0
+<br>
+
+#### **orphans**   
+Define o número minimo de linhas que devem ser deixadas no final de uma página quando ocorre uma quebra de página dentro de um elemento.
+<br>
+Exemplo:
+
+```css
+Não há exemplo no site.
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | Não encontrada
+Internet Explorer | Não encontrada
+Firefox           | Não encontrada
+Safari            | Não encontrada
+Opera             | Não encontrada
+<br>
+
+#### **outline**   
+Uma propriedade abreviada para as propriedades outline-width, outline-style e outline-color.
+<br>
+Exemplo:
+
+```css
+outline: 5px dotted green;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 8.0
+Firefox           | 1.5
+Safari            | 1.2
+Opera             | 7.0
+<br>
+
+#### **outline-color**   
+Define a cor de um contorno.
+<br>
+Exemplo:
+
+```css
+outline: 5px dotted green;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 8.0
+Firefox           | 1.5
+Safari            | 1.2
+Opera             | 7.0
+<br>
 
 
+#### **outline-offset**   
+Desloca um contorno e o desenha além da borda.
+<br>
+Exemplo:
 
+```css
+outline-offset: 5px dotted green;
+```
 
+Navegador         | Versão
+------------------|--------
+Chrome            | 4.0
+Internet Explorer | 15.0
+Firefox           | 3.5
+Safari            | 3.1
+Opera             | 10.5
+<br>
 
+#### **outline-style**   
+Define o estilo de um contorno.
+<br>
+Exemplo:
 
+```css
+div outline-style: dotted;
+```
 
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 8.0
+Firefox           | 1.5
+Safari            | 1.2
+Opera             | 7.0
+<br>
+
+#### **outline-width**   
+Define a largura de um contorno.
+<br>
+Exemplo:
+
+```css
+div {outline-width: thick;}
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 8.0
+Firefox           | 1.5
+Safari            | 1.2
+Opera             | 7.0
+<br>
+
+#### **overflow**   
+Especifica o que acontece se o conteúdo estourar a caixa de um elemento.
+<br>
+Exemplo:
+
+```css
+overflow: scroll;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 4.0
+Firefox           | 1.0
+Safari            | 1.0
+Opera             | 7.0
+<br>
+
+#### **overflow-wrap**   
+Especifica se o navegador pode ou não quebrar as linhas dentro das palavras para evitar o estouro(quando uma string é muito longa para caber na caixa que a contém).
+<br>
+Exemplo:
+
+```css
+Não há exemplo no site.
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | Não encontrada
+Internet Explorer | Não encontrada
+Firefox           | Não encontrada
+Safari            | Não encontrada
+Opera             | Não encontrada
+<br>
+
+#### **overflow-x**   
+Especifica se deve ou não cortar as bordas da esquerda/direita do conteúdo, se estourar a área de conteúdo do elemento.
+<br>
+Exemplo:
+
+```css
+overflow-x: scroll;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 4.0
+Internet Explorer | 9.0/8.0 -ms-
+Firefox           | 3.5
+Safari            | 3.0
+Opera             | 9.5
+<br>
+
+#### **overflow-y**   
+Especifica se deve ou não cortar as bordas superiores/inferiores do conteúdo, se estourar a área de conteúdo do elemento.
+<br>
+Exemplo:
+
+```css
+overflow-y: scroll;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 4.0
+Internet Explorer | 9.0/8.0 -ms-
+Firefox           | 3.5
+Safari            | 3.0
+Opera             | 9.5
+<br>
+
+#### **overflow-y**   
+Especifica se deve ou não cortar as bordas superiores/inferiores do conteúdo, se estourar a área de conteúdo do elemento.
+<br>
+Exemplo:
+
+```css
+overflow-y: scroll;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 4.0
+Internet Explorer | 9.0/8.0 -ms-
+Firefox           | 3.5
+Safari            | 3.0
+Opera             | 9.5
+<br>
+
+#### **padding**   
+Uma propriedade abreviada para todas as propriedades padding.
+<br>
+Exemplo:
+
+```css
+padding: 35px;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 4.0
+Firefox           | 1.0
+Safari            | 1.0
+Opera             | 3.5
+<br>
+
+#### **padding-bottom**   
+Define o preenchimento inferior de um elemento.
+<br>
+Exemplo:
+
+```css
+padding-bottom: 25px;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 4.0
+Firefox           | 1.0
+Safari            | 1.0
+Opera             | 3.5
+<br>
+
+#### **padding-left**   
+Define o preenchimento esquerdo de um elemento.
+<br>
+Exemplo:
+
+```css
+padding-left: 25px;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 4.0
+Firefox           | 1.0
+Safari            | 1.0
+Opera             | 3.5
+<br>
+
+#### **padding-right**   
+Define o preenchimento direito de um elemento.
+<br>
+Exemplo:
+
+```css
+padding-right: 25px;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 4.0
+Firefox           | 1.0
+Safari            | 1.0
+Opera             | 3.5
+<br>
+
+#### **padding-top**   
+Define o preenchimento superior de um elemento.
+<br>
+Exemplo:
+
+```css
+padding-top: 25px;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 4.0
+Firefox           | 1.0
+Safari            | 1.0
+Opera             | 3.5
+<br>
+
+#### **page-break-after**   
+Define o comportamento de quebra de página após um elemento.
+<br>
+Exemplo:
+
+```css
+page-break-after: always;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 4.0
+Firefox           | 1.0
+Safari            | 1.0
+Opera             | 3.5
+<br>
+
+#### **page-break-before**   
+Define o comportamento de quebra de página antes de um elemento.
+<br>
+Exemplo:
+
+```css
+page-break-before: always;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 4.0
+Firefox           | 1.0
+Safari            | 1.2
+Opera             | 7.0
+<br>
+
+#### **page-break-inside**   
+Define o comportamento de quebra de página antes de um elemento.
+<br>
+Exemplo:
+
+```css
+page-break-inside: always;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 4.0
+Firefox           | 1.0
+Safari            | 1.2
+Opera             | 7.0
+<br>
+
+#### **perspective**   
+Dá a um elemento posicionado em 3d alguma respectiva.
+<br>
+Exemplo:
+
+```css
+perspective: 100px;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 36.0/12.0 -webkit-
+Internet Explorer | 10.0
+Firefox           | 16.0/10.0 -moz-
+Safari            | 9.0/4.0.3 -webkit-
+Opera             | 23.0/15.0 -webkit-
+<br>
+
+#### **perspective-origin**   
+Define em qual posição o usuário está olhando para o elemento posicionado em 3D.
+<br>
+Exemplo:
+
+```css
+perspective-origin: left;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 36.0/12.0 -webkit-
+Internet Explorer | 10.0
+Firefox           | 16.0/10.0 -moz-
+Safari            | 9.0/4.0.3 -webkit-
+Opera             | 23.0/15.0 -webkit-
+<br>
+
+#### **pointer-events**   
+Define se um elemento reage ou não a eventos de ponteiro.
+<br>
+Exemplo:
+
+```css
+pointer-events: auto;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 2.0
+Internet Explorer | 11.0
+Firefox           | 3.6 
+Safari            | 4.0
+Opera             | 9.0
+<br>
+
+#### **position**   
+Especifica o método de posicionamento usado para um elemento(estático,relativo, absoluto ou fixo).
+<br>
+Exemplo:
+
+```css
+position: absolute;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 7.0
+Firefox           | 1.0 
+Safari            | 1.0
+Opera             | 4.0
+<br>
+
+#### **position**   
+Especifica o método de posicionamento usado para um elemento(estático,relativo, absoluto ou fixo).
+<br>
+Exemplo:
+
+```css
+position: absolute;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 7.0
+Firefox           | 1.0 
+Safari            | 1.0
+Opera             | 4.0
+<br>
+
+#### **quotes**   
+Define o tipo de aspas para aspas incorporadas.
+<br>
+Exemplo:
+
+```css
+quotes: "'" "'";
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 11.0
+Internet Explorer | 8.0
+Firefox           | 1.5 
+Safari            | 5.1
+Opera             | 4.0
+<br>
+
+#### **resize**   
+Define se e como um elemento é redimensionável pelo usuário.
+<br>
+Exemplo:
+
+```css
+resize: both;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 4.0
+Internet Explorer | 79.0
+Firefox           | 5.0/4.0 -moz- 
+Safari            | 4.0
+Opera             | 15.0
+<br>
+
+#### **right**   
+Especifica a posição correta de um elemento posicionado.
+<br>
+Exemplo:
+
+```css
+right: 150px;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 5.5
+Firefox           | 1.0 
+Safari            | 1.0
+Opera             | 5.0
+<br>
+
+#### **scroll-behavior**   
+Especifica se anima suavemente a posição de rolagem em uma caixa de rolagem, em vez de um salto direto..
+<br>
+Exemplo:
+
+```css
+scroll-behavior: smooth;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 61.0
+Internet Explorer | 79.0
+Firefox           | 36.0 
+Safari            | 14.0
+Opera             | 48.0
+<br>
+
+#### **tab-size**   
+Especifica a largura de um caractere de tabulação.
+<br>
+Exemplo:
+
+```css
+tab-size: 
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 21.0
+Internet Explorer | 79.0
+Firefox           | 4.0 -moz- 
+Safari            | 6.1
+Opera             | 15.0/10.6 -o-
+<br>
+
+#### **table-layout**   
+Define o algoritmo usado para definir as células, linhas e colunas da tabela.
+<br>
+Exemplo:
+
+```css
+table-layout: auto;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 14.0
+Internet Explorer | 5.0
+Firefox           | 1.0 
+Safari            | 1.0
+Opera             | 7.0
+<br>
+
+#### **text-align**   
+Especifica o alinhamento horizontal do texto.
+<br>
+Exemplo:
+
+```css
+text-align: right;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 3.0
+Firefox           | 1.0 
+Safari            | 1.0
+Opera             | 3.5
+<br>
+
+#### **text-align-last**   
+Descreve como a ultima linha de um bloco ou uma linha antes de uma quebra de linha forçada é alinhada quando o alinhamento é justificado.
+<br>
+Exemplo:
+
+```css
+text-align-last: right;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 47.0
+Internet Explorer | 5.5
+Firefox           | 49.0/12.0 -moz- 
+Safari            | não suportada
+Opera             | 34.0
+<br>
+
+#### **text-combine-upright**   
+Especifica a combinação de varios caracteres no espaço de um único caractere.
+<br>
+Exemplo:
+
+```css
+Não há um exemplo no site.
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | Não encontrada
+Internet Explorer | Não encontrada
+Firefox           | Não encontrada 
+Safari            | Não encontrada
+Opera             | Não encontrada
+<br>
