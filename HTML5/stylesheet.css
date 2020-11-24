@@ -1,0 +1,131 @@
+/* --------------------------
+ *  RESET/GLOBAL
+ * ----------------------- */
+html, body, footer{
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+h1,h2,h3{
+    margin-top: 0;
+}
+p{
+    margin-bottom: 0;
+}
+/* --------------------------
+ *  VARIÁVEIS
+ * ----------------------- */
+:root {
+    --largura: 1280px;
+    --highlightColor: #0f59a0;
+}
+
+/* --------------------------
+ *  CLASSES
+ * ----------------------- */
+.conteudoCentralizado{
+    width: var(--largura);
+    margin: 0 auto;
+}
+
+/* --------------------------
+ *  HEADER
+ * ----------------------- */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    margin-right: 15px;
+}
+nav ul li:last-child{
+    margin-right: 0;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #999;
+    font-weight: bold;
+}
+nav ul li a:hover,
+nav ul li a.active{
+    color: var(--highlightColor);
+}
+
+#imagemHeader{
+    width: 100%;    
+    height: 300px;
+    /*background:#b6b6b6 url("https://exame.com/wp-content/uploads/2018/08/cubo02.jpg") no-repeat center top;*/
+    background-color: #b6b6b6;
+    background-image: url("https://exame.com/wp-content/uploads/2018/08/cubo02.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: var(--largura) auto;    
+}
+
+/* --------------------------
+ *  CONTENT
+ * ----------------------- */
+ .contentSection{
+    margin-top: 25px;
+ }
+/* HOME */
+#homeSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#homeSection article{
+    width: 65%;
+}
+#homeSection aside{
+    width: 35%;
+    background-color: var(--highlightColor);
+    color: white;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    margin-left: 25px;
+}
+ /* --------------------------
+ *  FOOTER
+ * ----------------------- */
+
+ footer{
+    background-color: gray;
+    width: 100%;    
+    height: 125px;
+    background-size: var(--largura) auto;
+    display: flex;
+
+    
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.addressFooter{
+    width: var(--largura);
+    margin: 35px auto;
+    align-items: center;
+    
+}
+
+.addressRight{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 100px;
+}
+
+
