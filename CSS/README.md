@@ -3362,7 +3362,7 @@ Especifica a largura de um caractere de tabulação.
 Exemplo:
 
 ```css
-tab-size: 
+tab-size: 16;
 ```
 
 Navegador         | Versão
@@ -3444,4 +3444,376 @@ Internet Explorer | Não encontrada
 Firefox           | Não encontrada 
 Safari            | Não encontrada
 Opera             | Não encontrada
+<br>
+
+#### **text-decoration**   
+Especifica a decoração adicionada ao texto.
+<br>
+Exemplo:
+
+```css
+text-decoration: line-through;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 3.0
+Firefox           | 1.0 
+Safari            | 1.0
+Opera             | 3.5
+<br>
+
+#### **text-decoration-color**   
+Especifica a cor da decoração do texto.
+<br>
+Exemplo:
+
+```css
+text-decoration-color: red;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 57.0
+Internet Explorer | 79.0
+Firefox           | 36.0/6.0 -moz- 
+Safari            | 7.1 -webkit-
+Opera             | 44.0
+<br>
+
+#### **text-decoration-line**   
+Especifica o tipo de linha da decoração do texto.
+<br>
+Exemplo:
+
+```css
+text-decoration-line: double;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 57.0
+Internet Explorer | 79.0
+Firefox           | 36.0/6.0 -moz- 
+Safari            | 7.1 -webkit-
+Opera             | 44.0
+<br>
+
+#### **text-decoration-style**   
+Especifica como os elementos aninhados são renderizados no espaço 3D.
+<br>
+Exemplo:
+
+```css
+text-decoration-style: double;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 57.0
+Internet Explorer | 79.0
+Firefox           | 36.0/6.0 -moz- 
+Safari            | 7.1 -webkit-
+Opera             | 44.0
+<br>
+
+#### **transition**   
+Uma propriedade abreviada para todas propriedades transition.
+<br>
+Exemplo:
+
+```css
+transition: width 5s;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 26.0/4.0 -webkit-
+Internet Explorer | 10.0
+Firefox           | 16.0/4.0 -moz- 
+Safari            | 6.1/3.1 -webkit-
+Opera             | 12.1/10.5 -o-
+<br>
+
+#### **transition-delay**   
+Especifica quando o efeito de transição deve iniciar.
+<br>
+Exemplo:
+
+```css
+transition-delay: 2s;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 26.0/4.0 -webkit-
+Internet Explorer | 10.0
+Firefox           | 16.0/4.0 -moz- 
+Safari            | 6.1/3.1 -webkit-
+Opera             | 12.1/10.5 -o-
+<br>
+
+#### **transition-duration**   
+Especifica quantos segundos ou milissegundos um efeito de transição leva para ser concluido.
+<br>
+Exemplo:
+
+```css
+transition-duration: 5s;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 26.0/4.0 -webkit-
+Internet Explorer | 10.0
+Firefox           | 16.0/4.0 -moz- 
+Safari            | 6.1/3.1 -webkit-
+Opera             | 12.1/10.5 -o-
+<br>
+
+#### **transition-property**   
+Especifica o nome da propriedade CSS para a qual o efeito de transição é.
+<br>
+Exemplo:
+
+```css
+transition-property: width;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 26.0/4.0 -webkit-
+Internet Explorer | 10.0
+Firefox           | 16.0/4.0 -moz- 
+Safari            | 6.1/3.1 -webkit-
+Opera             | 12.1/10.5 -o-
+<br>
+
+#### **transition-time-function**   
+Especifica a curva de velocidade do efeito de transição.
+<br>
+Exemplo:
+
+```css
+transition-time-function: linear;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 26.0/4.0 -webkit-
+Internet Explorer | 10.0
+Firefox           | 16.0/4.0 -moz- 
+Safari            | 6.1/3.1 -webkit-
+Opera             | 12.1/10.5 -o-
+<br>
+
+#### **unicode-bidi**   
+Usado junto com a propriedade direction para definir ou retornar se o texto deve ser sobrescrito para suportar varios idiomas no mesmo documento.
+<br>
+Exemplo:
+
+```css
+unicode-bidi: bidi-override;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 2.0
+Internet Explorer | 5.5
+Firefox           | 1.0 
+Safari            | 1.3
+Opera             | 9.2
+<br>
+
+#### **user-select**   
+Especifica se o texto de um elemento pode ser selecionado.
+<br>
+Exemplo:
+
+```css
+user-select: none;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 54.0/6.0 -webkit-
+Internet Explorer | 79.0/10.0 -ms-
+Firefox           | 69.0/2.0 -moz- 
+Safari            | 3.1 -webkit-
+Opera             | 41.0/15.0 -webkit-
+<br>
+
+#### **vertical-align**   
+Define o alinhamento vertical de um elemento.
+<br>
+Exemplo:
+
+```css
+vertical-align: super;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 4.0
+Firefox           | 1.0 
+Safari            | 1.0
+Opera             | 4.0
+<br>
+
+#### **visibility**   
+Especifica quando ou não um elemento é visivel.
+<br>
+Exemplo:
+
+```css
+visibility: visible;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 4.0
+Firefox           | 1.0 
+Safari            | 1.0
+Opera             | 4.0
+<br>
+
+#### **white-espace**   
+Especifica como o espaço em branco dentro de um elemento é tratado.
+<br>
+Exemplo:
+
+```css
+white-espace;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 8.0
+Firefox           | 3.5 
+Safari            | 3.0
+Opera             | 9.5
+<br>
+
+#### **widows**   
+Define o número mínimo de linhas que devem ser deixadas no topo de uma página quando ocorre uma quebra de página dentro de um elemento.
+<br>
+Exemplo:
+
+```css
+Não há exemplo no site.
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | Não encontrada
+Internet Explorer | Não encontrada
+Firefox           | Não encontrada
+Safari            | Não encontrada
+Opera             | Não encontrada
+<br>
+
+#### **width** 
+Define a largura de um elemento.<br>
+Exemplo:
+
+```css
+width: 150px;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 4.0
+Firefox           | 1.0
+Safari            | 1.0
+Opera             | 3.5
+<br>
+
+#### **word-break** 
+Especifica como palavras devem quebrar ao chegar ao final de uma linha.<br>
+Exemplo:
+
+```css
+word-break: break-all;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 4.0
+Internet Explorer | 5.5
+Firefox           | 15.0
+Safari            | 3.1
+Opera             | 15.0
+<br>
+
+#### **word-spacing** 
+Aumenta ou diminui o espaçamento entre caracteres.<br>
+Exemplo:
+
+```css
+word-spacing: 30p;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 6.0
+Firefox           | 1.0
+Safari            | 1.0
+Opera             | 3.5
+<br>
+
+#### **word-wrap** 
+Permite que palavras longas e inquebráveis sejam quebradas e quebradas na próxima linha<br>
+Exemplo:
+
+```css
+word-wrap: break-word;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 4.0
+Internet Explorer | 5.5
+Firefox           | 3.5
+Safari            | 3.1
+Opera             | 10.5
+<br>
+
+#### **writing-mode** 
+Especifica se as linhas de texto são dispostas horizontal ou verticalmente<br>
+Exemplo:
+
+```css
+writing-mode: horizontal-tb;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 48.0
+Internet Explorer | 12.0
+Firefox           | 41.0
+Safari            | 11.0
+Opera             | 35.0
+<br>
+
+#### **z-index** 
+Define a ordem da pilha de um elemento posicionado.<br>
+Exemplo:
+
+```css
+z-index: -1;
+```
+
+Navegador         | Versão
+------------------|--------
+Chrome            | 1.0
+Internet Explorer | 4.0
+Firefox           | 3.0
+Safari            | 1.0
+Opera             | 4.0
 <br>
