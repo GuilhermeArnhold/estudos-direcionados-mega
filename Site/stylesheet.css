@@ -66,9 +66,9 @@ nav ul li a.active{
     height: 300px;
     /*background:#b6b6b6 url("https://exame.com/wp-content/uploads/2018/08/cubo02.jpg") no-repeat center top;*/
     background-color: #b6b6b6;
-    background-image: url("https://exame.com/wp-content/uploads/2018/08/cubo02.jpg");
+    background-image: url("https://exame.com/wp-content/uploads/2019/12/platina-220.jpg");
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: center;
     background-size: var(--largura) auto;    
 }
 
@@ -104,28 +104,34 @@ nav ul li a.active{
     width: 100%;    
     height: 125px;
     background-size: var(--largura) auto;
+}
+footer div{
     display: flex;
-
-    
+    justify-content: space-between;
+    align-items: center;
 }
 footer a{
     text-decoration: none;
     color: white;
 }
-
-.addressFooter{
-    width: var(--largura);
-    margin: 35px auto;
-    align-items: center;
-    
-}
-
 .addressRight{
     color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 100px;
+    text-align: right;
 }
+
+#formulario #nome, #empresa{
+    width: 32%;
+}
+
+#formulario #email{
+    width: 80%;
+}
+div.inline{
+}
+
+
+
+
+
 
 
