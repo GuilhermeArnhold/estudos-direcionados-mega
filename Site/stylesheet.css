@@ -119,18 +119,79 @@ footer a{
     text-align: right;
 }
 
-#formulario #nome, #empresa{
-    width: 32%;
+/* --------------------------
+ *  CONTENT
+ * ----------------------- */
+form .formColumnHalf{
+    display: flex;
+    justify-content: space-between;
 }
 
-#formulario #email{
-    width: 80%;
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
 }
-div.inline{
+
+form input,select{
+    height: 35px;
 }
 
+form input,select,textarea{
+    border: solid 1px #cccccc;
+}
 
+form input[type="radio"]{
+    height: 15px;
+}
+form input[type="checkbox"]{
+    height: 15px;
+}
+form input[type="submit"]{
+    margin-top: 20px;
+    width: 20%;
+    height: 50px;
+    background-color: #0f59a0;
+    color: white;
+    font-weight: bolder;
+}
 
+form .formField{    
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+form .formField.formFieldRow{
+    flex-direction: row;
+}
+form .formField label{
+    margin-bottom: 5px;
+}
+
+form .formField.formFieldRequired label:after{
+    content: "*";
+    color: #F00;
+}
+
+form .formField input[type='radio']:first-child{
+    margin-left: 0;
+}
+
+form .formColumnHalf{
+    display: flex;
+    justify-content: space-between;
+}
+
+form .formColumnHalf .formField{
+    width: 49%;
+}
+
+#empresaSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
 
 
 
