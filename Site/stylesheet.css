@@ -104,6 +104,7 @@ nav ul li a.active{
     width: 100%;    
     height: 125px;
     background-size: var(--largura) auto;
+    margin-top: 150px;
 }
 footer div{
     display: flex;
@@ -193,6 +194,49 @@ form .formColumnHalf .formField{
     align-items: flex-start;
 }
 
+.nomeaside{
+    text-align: right;
+    margin-right: 50px;
+}
 
+.titleTabelaServicos{
+    margin-left: 40px;
+}
 
+.cabecalhoTabela{
+    font-size: 14pt;
+    background-color: #0f59a0;
+    color: white;
+}
+table { border-collapse:collapse };
 
+article ul{
+    padding: 0;
+    margin: 0;
+}
+
+.centerText{
+text-align: center;
+
+}
+.rightText{
+    text-align: right;
+}
+
+.listTypeEmpresa
+{
+    list-style: square;
+}
+
+#empresaSection aside{
+    width:35%;
+    color: white;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    margin-left: 25px;
+}
+
+figure img{
+   height: 400px;
+   width: 250px;
+} 
