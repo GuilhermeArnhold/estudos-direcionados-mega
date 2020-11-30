@@ -119,6 +119,12 @@ footer a{
     color: white;
     text-align: right;
 }
+.footerDireitos{
+   color: white;  
+   margin-left: 300px;
+   margin-top: 30px;
+}
+
 
 /* --------------------------
  *  CONTENT
@@ -229,14 +235,23 @@ text-align: center;
 }
 
 #empresaSection aside{
-    width:35%;
-    color: white;
-    padding: 15px 20px;
+    padding: 0px 53px;
     box-sizing: border-box;
     margin-left: 25px;
+}
+
+figure figcaption{
+    background-color: gray;
+    color: white;
+    text-align: center;
 }
 
 figure img{
    height: 400px;
    width: 250px;
 } 
+
+figcaption{
+    margin-top: -5px;
+}
+
