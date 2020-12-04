@@ -1,12 +1,14 @@
+// Os códigos abaixo foram atividades realizadas durante o curso, ou seja, inclui erros propositais com fim de aprendizado.
 
 
+/*
 let country = "Brazil";
 let continent = "South America";
 let population = 209;
 let isIsland = false;
 let language;
 
-/*
+
 console.log(country);
 console.log(continent);
 console.log(population);
@@ -85,7 +87,6 @@ if (bmiMarks > bmiJohn) {
 else {
     console.log(`O BMI de John (${bmiJohn}) é superior ao de Marks(${bmiMarks})`);
 }
-*/
 
 
 console.log('9' - '5');
@@ -94,6 +95,86 @@ console.log('19' - '13' + 17);
 console.log('123' < 57);
 console.log(5 + 6 + '4' + 9 - 4 - 2);
 
+
+let numNeighbours = Number(prompt(`How many neighbour countries does your country have?`));
+
+if (numNeighbours === 1) {
+    console.log(`Only 1 border`);
+}
+else if (numNeighbours > 1) {
+    console.log(`More than 1 border.`);
+}
+else {
+    console.log(`No borders`);
+}
+
+
+//Resolução da questão
+let pais = "Brasil";
+let populacao = 40;
+let linguagem = "inglês";
+let ilha = false;
+
+if (populacao < 50 && linguagem == "inglês" && ilha == false) {
+    console.log(`Você deveria morar no ${pais}.`);
+}
+else {
+    console.log(`O ${pais} não atende aos seus critérios.`);
+}
+
+
+//Resolução com input.
+let meuPais = "Brasil";
+let populacao = 209;
+let linguagem = "português";
+let ilha = false;
+
+
+let populacaoDesejada = Number(prompt(`A população do país deve ser menor que: `));
+let linguagemDesejada = prompt(`Insira a linguagem desejada: `);
+let eIlha = prompt(`O país deve ser uma ilha? Insira sim ou não: `);
+if (eIlha == "sim" || eIlha == "SIM" || eIlha == "Sim") {
+    eIlha = true;
+}
+else if (eIlha == "não" || eIlha == "NÃO" || eIlha == "Não") {
+    eIlha = false;
+}
+else {
+    alert("Erro");
+}
+
+
+if (populacao < populacaoDesejada && linguagem == linguagemDesejada && ilha == false) {
+    console.log(`Você deveria morar no ${meuPais}.`);
+}
+else {
+    console.log(`O ${meuPais} não atende aos seus critérios.`);
+}
+
+
+let minimumScore = 100;
+let dolphinsScoreOne = 97;
+let dolphinsScoreTwo = 112;
+let dolphinsScoreThree = 202;
+let koalasScoreOne = 109;
+let koalasScoreTwo = 95;
+let koalasScoreThree = 200;
+let koalasTotalScore = (koalasScoreOne + koalasScoreTwo + koalasScoreThree) / 3;
+let dolphinsTotalScore = (dolphinsScoreOne + dolphinsScoreTwo + dolphinsScoreThree) / 3;
+
+if (koalasTotalScore > dolphinsTotalScore && koalasTotalScore >= 100) {
+    console.log("Koala venceu!");
+}
+else if (koalasTotalScore < dolphinsTotalScore && dolphinsTotalScore >= 100) {
+    console.log("Dolphins venceu!");
+}
+else if (koalasTotalScore == dolphinsTotalScore && dolphinsTotalScore >= 100 && koalasTotalScore >= 100) {
+    console.log("Empate! Os dois times venceram!");
+}
+else {
+    console.log("Ninguém atingiu a pontuação minima de 100 pontos, ou seja, nenhum dos dois times venceu.");
+}
+*/
 
 
 
