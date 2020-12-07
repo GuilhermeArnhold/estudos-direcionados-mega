@@ -174,6 +174,42 @@ else if (koalasTotalScore == dolphinsTotalScore && dolphinsTotalScore >= 100 && 
 else {
     console.log("Ninguém atingiu a pontuação minima de 100 pontos, ou seja, nenhum dos dois times venceu.");
 }
+
+
+let language = prompt("Qual a sua linguagem?");
+
+switch(language)
+{
+    case "chines":
+    case "mandarim":
+        console.log(`Maior número de falantes nativos!`);
+        break;
+    case "espanhol":
+        console.log("Segundo lugar com mais nativos falantes!");
+        break;
+    case "ingles":
+        console.log(`Terceiro lugar`);
+        break;
+    case "indiano":
+        console.log("Number 4");
+        break;
+    case "arabe":
+        console.log(`Quinto lugar.`);
+        break;
+    default:
+        console.log("Legal a sua lingua!");
+    }
+
+
+let population = 13;
+
+population > 33 ? console.log(`A populacao do Brasil e maior que 33 milhoes`)  : console.log("A populacao do Brasil esta abaixo da media");
+
+
+let conta = Number(prompt(`Qual o valor da conta?`));
+let gorjeta = conta >= 50 && conta <= 300 ? gorjeta = conta * (20/100) : conta * (15/100);
+let total = conta + gorjeta;
+console.log(`A conta e de ${conta} reais, a gorjeta ${gorjeta} reais e o total e de: ${total} reais.`);
 */
 
 
