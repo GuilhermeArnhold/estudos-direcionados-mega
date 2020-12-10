@@ -130,15 +130,105 @@ console.log(neighbours);
 
 const calcTipe = function (bill) {
     if (bill > 50 && bill < 300) {
-        return 15;
+        return bill * 0.15;
     }
     else {
-        return 20;
+        return bill * 0.2;
     }
 }
-let bill = [125, 555, 44];
-let tips = new Array();
 
-tips = calcTipe(bill[0]);
-console.log(tips);
+
+const bills = [125, 555, 44]
+let tips = [calcTipe(bills[0]), calcTipe(bills[1]), calcTipe(bills[2])];
+const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+console.log(bills, tips, totals);
+
+
+const myCountry = {
+    country: "Brasil",
+    capital: "Brasilia",
+    language: "Portuguese",
+    population: 209,
+    neighbours: ["Argentina", "Bolívia", "Colômbia", "Guiana", "Guiana Francesa", "Paraguai", "Peru", "Suriname", "Uruguai", "Venezuela"]
+};
+
+myCountry.population += 2;
+console.log(myCountry.population);
+myCountry["population"] += 2;
+console.log(myCountry.population);
+console.log(`${myCountry.country} has ${myCountry.population} milion ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}`);
+
+
+
+const jonas = {
+    firstName: "Jonas",
+    lastName: "Schmedtmann",
+    birthyear: 1991,
+    job: "Teacher",
+    hasDriverLicense: true,
+
+    calcAge: function () {
+        this.age = 2037 - 1991;
+        return this.age;
+    },
+
+    getSummary: function () {
+        return `${this.firstName} is a ${this.calcAge()}-year old ${this.job} and he has ${this.hasDriverLicense ? "a" : "no"} driver´s license.`;
+    }
+};
+console.log(jonas.getSummary());
+
+
+
+const mark = {
+    fullName: "Mark Miller",
+    mass: 78,
+    height: 1.69,
+
+    calcBmi: function () {
+        this.bmi = this.mass / this.height ** 2;
+    }
+};
+
+const john = {
+    fullName: "John Smith",
+    mass: 92,
+    height: 1.95,
+
+    calcBmi: function () {
+        this.bmi = this.mass / this.height ** 2;
+        return this.bmi;
+    }
+
+};
+
+
+mark.calcBmi();
+john.calcBmi();
+if (john.bmi > mark.bmi) {
+    console.log(`${john.fullName}´s BMI (${john.bmi}) is higher than ${mark.fullname} (${mark.bmi})`);
+}
+else {
+    console.log(`${mark.fullName}´s BMI (${mark.bmi}) is higher than ${john.fullName} (${john.bmi})`);
+}
+
+
+const myCountry = {
+    country: "Brasil",
+    capital: "Brasilia",
+    language: "Portuguese",
+    population: 209,
+    neighbours: ["Argentina", "Bolívia", "Colômbia", "Guiana", "Guiana Francesa", "Paraguai", "Peru", "Suriname", "Uruguai", "Venezuela"],
+
+    describe: function () {
+        console.log((`${this.country} has ${this.population} milion ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital} `));
+    },
+    checkIsland: function () {
+        this.island = this.neighbours.length == 0 ? true : false;
+    }
+};
+myCountry.describe();
+myCountry.checkIsland();
+console.log(myCountry);
 */
+
