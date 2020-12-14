@@ -230,5 +230,49 @@ const myCountry = {
 myCountry.describe();
 myCountry.checkIsland();
 console.log(myCountry);
-*/
 
+for (let rep = 0; rep <= 50; rep++) {
+    console.log(`Vote number ${rep} is currently voting!`);
+}
+
+
+let populations = [209, 10, 60, 83];
+
+function percentageOfWorld1(populations) {
+    return (populations / 7900) * 100;
+}
+
+let percentages2 = [];
+for (let i = 0; i < populations.length; i++) {
+    percentages2[i] = percentageOfWorld1(populations[i]);
+    console.log(percentages2[i]);
+}
+
+
+//Alternativo
+
+let populations = [209, 10, 60, 83];
+
+function percentageOfWorld1(populations) {
+    return (populations / 7900) * 100;
+}
+
+let percentages2 = [];
+for (let i = 0; i < populations.length; i++) {
+    const perc = percentageOfWorld1(populations[i]);
+    percentages2.push(perc);
+}
+console.log(percentages2);
+
+let listOfNeighbours = [
+    ["Canada", "Mexico"],
+    ["Espanha"],
+    ["Norway", "Sweden", "Russia"],
+];
+
+for (let i = 0; i < listOfNeighbours.length; i++) {
+    for (let j = 0; j < listOfNeighbours[i].length; j++) {
+        console.log(`Neighbours: ${listOfNeighbours[i][j]}`);
+    }
+}
+*/
