@@ -1,15 +1,100 @@
 'use strict';
 
+const capitalizeName = function (name) {
+  const names = name.split(' ');
+  const namesUpper = [];
+  for (const n of names) {
+    namesUpper.push(n[0].toUpperCase() + n.slice(1));
+  }
+  console.log(namesUpper.join(' '));
+};
+
+capitalizeName(
+  'guilherme arnhold'
+); /*
+const priceDolar = '$5.28';
+const priceReal = priceDolar.replace('$', 'R$');
+console.log(priceReal);
+
+
+const checkMiddleSeat = function (seat) {
+  //const assent = seat.slice(-1);
+
+  //return assent == 'E' || assent == 'B' ? 'Middle Seat' : 'not middle seat';
+  const pattern = RegExp(/.+(B|E)/g);
+  return pattern.test(seat) ? 'Middle Seat' : 'not the middle seat';
+};
+
+console.log(checkMiddleSeat('11B'));
+console.log(checkMiddleSeat('23C'));
+console.log(checkMiddleSeat('3E'));
+
+
+const email = 'Jonas@gmail.com';
+const loginEmail = '  Jonas@Gmail.Com \n';
+
+const emailLower = loginEmail.toLowerCase();
+const trimmEmail = emailLower.trim();
+trimmEmail;
+console.log(trimmEmail);
+*/
+
+/*
+
+const gameEvents = new Map([
+  [17, 'GOAL'],
+  [36, 'Substitution'],
+  [47, 'Goal'],
+  [61, 'Substitution'],
+  [64, 'Yellow Card'],
+  [69, 'Red Card'],
+  [70, 'Substitution'],
+  [72, 'Substitution'],
+  [76, 'Goal'],
+  [80, 'Goal'],
+  [92, 'Yellow Card'],
+]);
+
+console.log(gameEvents.values());
+const events = new Set(...gameEvents.values());
+gameEvents.delete(64);
+
+const time = [...gameEvents.keys()].pop();
+console.log(time);
+
+console.log(
+  `An event happened, on average, every ${time / gameEvents.size} minutes`
+);
+
+for (const [min, event] of gameEvents) {
+  const half = min < 45 ? 'First' : 'Second';
+  console.log(`${half} Half ${min}: ${event}`);
+}
+
 const question = new Map([
   ['question', 'What is the best programming language in the world'],
   [1, 'C'],
   [2, 'Java'],
   [3, 'Javascript'],
-  ['correct', 3],
+  ['Correct', 3],
+  [true, 'Correct'],
+  [false, 'Try again'],
 ]);
 
+console.log(question.get('question'));
+
+for (const [key, value] of question) {
+  if (typeof key === 'number') console.log(`Your answer ${key}: ${value}`);
+}
+
+const answer = Number(prompt('Your answer'));
+
+console.log(answer);
+console.log(question.get(question.get('Correct') === answer));
 const hoursMap = new Map(Object.entries(openingHours));
 console.log(hoursmap);
+
+question.get('question');
 for (const [key, value] of question) {
   if (typeof (key === number)) {
     console.log(`Answer `);
