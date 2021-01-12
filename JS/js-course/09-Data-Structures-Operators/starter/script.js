@@ -1,5 +1,51 @@
 'use strict';
 
+const booking = [];
+
+const createBooking = function (flightNum, numPassengers, price) {
+  const booking = {
+    flightNum,
+    numPassengers,
+    price,
+  };
+  console.log(booking);
+  booking.push(booking);
+};
+
+/*
+document.body.append(document.createElement('textarea'));
+document.body.append(document.createElement('button'));
+
+document.querySelector('button').addEventListener('click', function () {
+  const text = document.querySelector('textarea').value;
+  console.log(text);
+  const rows = text.split('\n');
+  console.log(rows);
+  for (const row of rows) {
+    const [first, second] = row.toLowerCase().trim().split('_');
+    const output = `${first}${
+      second != undefined
+        ? second.replace(second[0], second[0].toUpperCase())
+        : ''
+    }`;
+    console.log(`${output.padEnd(20)}'+'`);
+  }
+});
+
+const checkBaggage = function (items) {
+  const baggage = items.toLowerCase();
+  if (baggage.includes('knife') || baggage.includes('gun')) {
+    console.log(`You cannot enter in the airplane!`);
+  } else console.log(`Welcome Aboard`);
+};
+
+checkBaggage('I have laptop, some food and a pocket Knife.');
+checkBaggage('Socks and camera');
+checkBaggage('Got some snacks and a gun for protection.');
+
+const aviso = 'Alerta SOS! \n';
+console.log(aviso.repeat(5));
+
 const capitalizeName = function (name) {
   const names = name.split(' ');
   const namesUpper = [];
@@ -11,7 +57,7 @@ const capitalizeName = function (name) {
 
 capitalizeName(
   'guilherme arnhold'
-); /*
+); 
 const priceDolar = '$5.28';
 const priceReal = priceDolar.replace('$', 'R$');
 console.log(priceReal);
