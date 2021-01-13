@@ -1,5 +1,54 @@
 'use strict';
 
+const greet = function (greeting) {
+  return function (name) {
+    console.log(`${greeting} ${name}`);
+  };
+};
+
+const greeterHey = greet('hey');
+greeterHey('Jonas');
+greeterHey('Steven');
+greet('Hello')('Jonas');
+
+const greetArr = greeting => name => console.log(`${greeting} ${name}`);
+greetArr('Hi')('Jonas');
+
+const lufthansa = {
+  airline: 'Lufthansa',
+  iataCode: 'LH',
+  bookings: [],
+  book(flightNum, name) {
+    console.log(
+      `${name} booked a seat on ${this.airline} flight ${this.iataCode}${flightNum}`
+    );
+    this.bookings.push({ flight: `${this.iataCode}${flightNum}`, name });
+  },
+};
+
+lufthansa.book(239, 'Guilherme');
+console.log(lufthansa);
+
+const eurowings = {
+  name: 'eurowings',
+  iataCode: 'EW',
+  bookings: [],
+};
+
+const book = lufthansa.book;
+book.call(eurowings, 23, 'João das Neves');
+book.call(lufthansa, 239, 'Criston da silva');
+
+const swiss = {
+  name: 'Swiss Air Lines',
+  iataCode: 'LX',
+  bookings: [],
+};
+
+book.call(swiss, 583, 'Mary Cooper');
+console.log(
+  swiss
+); /*
 const oneWord = function (str) {
   return str.replace(/ /g, ' ').toLowerCase();
 };
@@ -15,10 +64,18 @@ const transformer = function (str, fn) {
   console.log(`Transformed by: ${fn.name}`);
 };
 
-transformer(
-  'Javascript is the best!',
-  upperFirstWord
-); /*
+transformer('Javascript is the best!', upperFirstWord);
+
+transformer('Javascript is the best!', oneWord);
+
+const high5 = function () {
+  console.log(`++`);
+};
+
+document.body.addEventListener('click', high5);
+
+['Jonas', 'Martha', 'Adam'].forEach(high5);
+
 const flight = 'LH234';
 const person = {
   name: 'Jonas',
