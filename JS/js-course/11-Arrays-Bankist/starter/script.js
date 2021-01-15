@@ -1,9 +1,30 @@
 'use strict';
 
+const julia = [3, 5, 2, 12, 7];
+const kate = [4, 1, 15, 8, 3];
+
+const checkdogs = function (dogsJulia, dogsKate) {
+  let julia2 = [3, 5, 2, 12, 7];
+  julia2.splice(3, 1);
+  julia2.splice(0, 1);
+
+  let twoGroups = julia2.concat(dogsKate);
+  twoGroups.forEach(function (dog, i) {
+    if (dog >= 3) {
+      console.log(`Dog number ${i + 1} is adult and have ${dog} years old.`);
+    } else {
+      console.log(
+        `Dog number ${i + 1} still a puppy and have ${dog} years old.`
+      );
+    }
+  });
+};
+
+checkdogs(julia, kate);
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // BANKIST APP
-
+/*
 // Data
 const account1 = {
   owner: 'Jonas Schmedtmann',
@@ -32,8 +53,6 @@ const account4 = {
   interestRate: 1,
   pin: 4444,
 };
-
-const accounts = [account1, account2, account3, account4];
 
 // Elements
 const labelWelcome = document.querySelector('.welcome');
@@ -65,12 +84,24 @@ const inputClosePin = document.querySelector('.form__input--pin');
 /////////////////////////////////////////////////
 // LECTURES
 
-const currencies = new Map([
-  ['USD', 'United States dollar'],
-  ['EUR', 'Euro'],
-  ['GBP', 'Pound sterling'],
-]);
-
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
 /////////////////////////////////////////////////
+
+const accounts = [account1, account2, account3, account4];
+
+const displayMovements = function (movements) {
+  containerMovements.innerHTML = ' ';
+  movements.forEach(function (mov, i) {
+    const type = mov > 0 ? 'deposit' : 'withdrawal';
+    const html = `<div class="movements__row">
+    <div class="movements__type movements__type--${type}">${i + 1}${type}</div>
+    <div class="movements__value">${mov}</div>
+  </div>`;
+
+    containerMovements.insertAdjacentHTML('afterbegin', html);
+  });
+};
+
+displayMovements(account1.movements);
+*/
