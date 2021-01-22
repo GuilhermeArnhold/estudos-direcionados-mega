@@ -1,11 +1,34 @@
 'use strict';
 
+const dogs = [
+  { weight: 22, curFood: 250, owners: ['Alice', 'Bob'] },
+  { weight: 8, curFood: 200, owners: ['Matilda'] },
+  { weight: 13, curFood: 275, owners: ['Sarah', 'John'] },
+  { weight: 32, curFood: 340, owners: ['Michael'] },
+];
+
+dogs.forEach(dog => (dog.recfood = Math.trunc(dog.weight ** 0.75 * 28)));
+const dogSarah = dogs.find(dog => dog.owners.includes('Sarah'));
+console.log(
+  `The dog of Sarah is eating too much! The recommended food is ${dogSarah.recfood} and he is eating ${dogSarah.curFood}!`
+);
+
+const ownersEatTooMuch = dogs
+  .filter(dog => dog.recfood > dog.curFood)
+  .flatMap(dog => dog.owners);
+const ownersEatTooLittle = dogs
+  .filter(dog => dog.recfood < dog.curFood)
+  .flatMap(dog => dog.owners);
+
+console.log(`${ownersEatTooMuch.join(' ')} dogs eat too much!`);
+console.log(`${ownersEatTooLittle.join(' ')} dogs eat too little!`);
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // BANKIST APP
 
 /////////////////////////////////////////////////
 // Data
+/*
 const account1 = {
   owner: 'Jonas Schmedtmann',
   movements: [200, 450, -400, 3000, -650, -130, 70, 1300],
@@ -136,8 +159,6 @@ btnLogin.addEventListener('click', function (e) {
   if (currentAccount?.pin === Number(inputLoginPin.value)) {
     labelWelcome.textContent = `Welcome Back ${currentAccount.owner} `;
     containerApp.style.opacity = 100;
-    inputLoginUsername = inputLoginPin.value = '';
-    inputLoginPin.blur();
   }
 });
 
@@ -164,7 +185,9 @@ btnTransfer.addEventListener('click', function (e) {
     updateUI(currentAccount);
   }
 });
-
+const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+movements.sort();
+console.log(movements);
 /*
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 const ages = [5, 2, 4, 1, 15, 8, 3];
