@@ -248,6 +248,8 @@ btnSort.addEventListener('click', function (e) {
   sorted = !sorted;
 });
 
+const now = new Date();
+console.log(now);
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
