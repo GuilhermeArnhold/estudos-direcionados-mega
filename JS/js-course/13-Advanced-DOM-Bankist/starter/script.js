@@ -40,3 +40,13 @@ btnScrollTo.addEventListener('click', function (e) {
   const s1coords = section1.getBoundingClientRect();
   console.log(s1coords);
 });
+
+document.querySelector('.nav__links').addEventListener('click', function (e) {
+  console.log(e.target);
+  if (e.target.classList.contains('.nav__link')) {
+    console.log('link');
+  }
+});
+
+const h1 = document.querySelector('h1');
+h1.firstElementChild.style.color = 'white';
