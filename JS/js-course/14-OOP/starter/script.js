@@ -62,30 +62,33 @@ ford.speedUS = 100;
 console.log(ford.speedUS);
 */
 
-const Car = function (make, speed) {
+const CarCl = function (make, speed) {
   this.speed = speed;
   this.make = make;
 };
 
-const EV = function (make, speed, charge) {
-  Car.call(this, make, speed);
-  this.charge = charge;
-};
+class EVCL extends CarCl {
+  #charge;
+  constructor(make, speed, charge) {
+    super(make, speed);
+    this.#charge = charge;
+  }
 
-EV.prototype = Object.create(Car.prototype);
-EV.prototype.chargeBattery = function (chargeTo) {
-  this.charge = chargeTo;
-};
+  chargeBattery(chargeTo) {
+    this.#charge = chargeTo;
+    return this;
+  }
 
-EV.prototype.accelerate = function () {
-  this.speed += 20;
-  this.charge--;
-  console.log(
-    `${this.make} is going at ${this.speed} km/h and your charge is ${this.charge}%`
-  );
-};
-
-const tesla = new EV('Tesla', 120, 23);
-tesla.chargeBattery(90);
-console.log(tesla);
-tesla.accelerate();
+  accelerate() {
+    this.speed += 20;
+    this.#charge--;
+    console.log(
+      `${this.make} is going at ${this.speed} km/h and your charge is ${
+        this.#charge
+      }%`
+    );
+  }
+}
+const rivian = new EVCL('Rivian', 120, 23);
+console.log(rivian);
+rivian.accelerate();
